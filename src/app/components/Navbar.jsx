@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <nav className={`absolute z-20 w-full 
     ${isScrolled ? "fixed bg-white/90 " : "absolute bg-transparent"}`}>
-      <div className="px-4 md:px-[50px] lg:px-[100px] mx-auto flex justify-between items-center py-3 md:py-4 bg-transparent">
+      <div className="px-[20px] md:px-[50px] lg:px-[100px] mx-auto flex justify-between items-center py-3 md:py-4 bg-transparent">
 
         {/* Logo */}
         <Image

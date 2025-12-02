@@ -1,4 +1,4 @@
-import WhatWeCreate from "./WhatWeCreate";
+import WhatWeCreate from "../Home/WhatWeCreate";
 
 export default function Hero() {
   return (

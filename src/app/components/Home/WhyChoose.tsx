@@ -3,7 +3,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 export default function WhyChoose() {
   return (
-    <section className="relative w-full bg-[#FF8A3D] bg-gradient-to-br from-[#FF8A3D] to-[#FFA55C] text-white py-20 px-[16px] md:px-[50px] lg:px-[100px] overflow-hidden">
+    <section className="relative w-full bg-[#FF8A3D] bg-gradient-to-br from-[#FF8A3D] to-[#FFA55C] text-white py-20 px-[20px] md:px-[50px] lg:px-[100px] overflow-hidden">
         <div className="absolute inset-0 h-[800px] bg-[radial-gradient(circle_at_50%_55%,rgba(255,255,255,0.6)_20%,transparent_50%)] md:bg-[radial-gradient(circle_at_75%_55%,rgba(255,255,255,0.6)_10%,transparent_30%)]" />
       <div className="relative z-10 flex flex-col md:flex-row ">
         {/* LEFT CONTENT */}
