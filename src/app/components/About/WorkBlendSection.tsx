@@ -33,16 +33,16 @@ export default function WorkBlendSection() {
         {items.map((item, index) => (
           <div
             key={index}
-            className="bg-[#FF9555] text-white rounded-xl md:rounded-3xl p-4 md:p-8 shadow-sm flex flex-col justify-center"
+            className="bg-[#FF9555] text-white rounded-2xl md:rounded-3xl p-4 md:p-8 shadow-sm flex flex-col justify-center"
           >
             {/* ICON */}
             <div className="text-4xl mb-2 md:mb-4">{item.icon}</div>
 
             {/* TITLE */}
-            <h3 className="text-xl font-semibold md:mb-2">{item.title}</h3>
+            <h3 className="font-[poppins] text-[18px] sm:text-[18px] lg:text-[18px] font-semibold md:mb-2">{item.title}</h3>
 
             {/* DESCRIPTION */}
-            <p className="text-white/90 text-sm leading-relaxed">
+            <p className="text-white/90 font-[poppins] text-[14px] sm:text-[14px] lg:text-[16px] leading-relaxed">
               {item.desc}
             </p>
           </div>
