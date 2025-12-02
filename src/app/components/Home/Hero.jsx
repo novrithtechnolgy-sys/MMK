@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
 
           <div className="w-full lg:w-1/2 text-[#B3B3B3] max-w-lg text-center md:text-left">
-            <p className="font-[poppins] text-[14px] sm:text-[14px] lg:text-[18px] font-regular leading-relaxed">
+            <p className="font-[poppins] text-[14px] sm:text-[16px] lg:text-[18px] font-regular leading-relaxed">
               At MarketMyKeys, we reveal the true essence of every property. From cozy homes
               to luxury villas and modern apartments, we create impactful real estate visuals
               that turn interest into inquiries and views into offers, driving serious buyers

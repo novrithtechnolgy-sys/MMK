@@ -1,15 +1,18 @@
 "use client";
 import Image from "next/image";
 
-export default function About() {
+export default function AboutUs() {
   return (
-    <section className="w-full bg-white px-6 md:px-16 lg:px-24 py-16">
+    <section className="w-full bg-white px-[20px] md:px-[50px] lg:px-[100px] py-20 md:py-25">
       {/* Text Section */}
-      <div className="max-w-5xl mx-auto text-center">
-        <p className="text-[14px] sm:text-[16px] md:text-[18px] font-[poppins] leading-relaxed text-[#111]">
+      <div className="flex flex-col md:flex-row mx-auto text-center md:text-start">
+        <h2 className="font-[unbounded] md:w-9/7 text-[20px] sm:text-[30px] lg:text-[40px] font-medium leading-tight mb-4 md:mb-8">
+          Who We Are
+        </h2>
+        <p className="text-[14px] sm:text-[16px] lg:text-[18px] font-[poppins] leading-relaxed text-center md:text-justify text-[#B3B3B3] ">
           MarketMyKeys is a premium media production company dedicated to helping
           property owners, real estate agents, and interior designers market their
-          assets with clarity, impact, and emotion. <br /><br />
+          assets with clarity, impact, and emotion. <br />
           We don't just document a room. We reveal its character, lifestyle, and design
           intent. With years of experience in architectural photography,
           cinematography, and digital marketing, we bring a 360° understanding of
@@ -19,12 +22,12 @@ export default function About() {
       </div>
 
       {/* Images Section */}
-      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className="flex gap-2 md:gap-6 mt-12 w-full">
         
         {/* Image 1 */}
-        <div className="rounded-3xl overflow-hidden">
+        <div className="flex-[2] rounded-xl md:rounded-3xl overflow-hidden">
           <Image
-            src="/about/house1.png"
+            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764658979/cwfjk90rak9q6brbyg0u.jpg"
             alt="Modern House"
             width={600}
             height={450}
@@ -33,9 +36,9 @@ export default function About() {
         </div>
 
         {/* Image 2 */}
-        <div className="rounded-3xl overflow-hidden">
+        <div className="flex-[1.2] rounded-xl md:rounded-3xl overflow-hidden">
           <Image
-            src="/about/livingroom.png"
+            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764658978/mayjsa7o812imvnmlwn8.jpg"
             alt="Interior Room"
             width={600}
             height={450}
@@ -44,15 +47,16 @@ export default function About() {
         </div>
 
         {/* Image 3 */}
-        <div className="rounded-3xl overflow-hidden">
+        <div className="flex-[1] rounded-xl md:rounded-3xl overflow-hidden">
           <Image
-            src="/about/kitchen.png"
+            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764658978/hwuc9r36oxpgi0qmfy7h.jpg"
             alt="Modern Kitchen"
             width={600}
             height={450}
             className="w-full h-full object-cover"
           />
         </div>
+   
       </div>
     </section>
   );
