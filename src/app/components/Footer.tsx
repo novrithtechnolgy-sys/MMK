@@ -18,7 +18,7 @@ export default function Footer() {
             height={100} />
 
           {/* Menu */}
-          <nav className="flex flex-wrap justify-center gap-8 text-[15px] mt-6 md:mt-0 font-medium">
+          <nav className="flex flex-wrap justify-center gap-4 md:gap-8 text-[12px] md:text-[16px] lg:text-[18px] mt-6 md:mt-0 font-medium">
             <a href="#" className="hover:opacity-80">Home</a>
             <a href="#" className="hover:opacity-80">About Us</a>
             <a href="#" className="hover:opacity-80">Our Works</a>
@@ -46,7 +46,7 @@ export default function Footer() {
         <hr className="w-full border-white/50" />
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-center md:justify-between w-full text-sm text-white/90 gap-4">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between w-full text-sm text-white/90 gap-4 text-[12px] md:text-[16px] lg:text-[18px]">
           <p>© 2025 Zinkq. All rights reserved.</p>
 
           <div className="flex flex-wrap justify-center gap-6">
