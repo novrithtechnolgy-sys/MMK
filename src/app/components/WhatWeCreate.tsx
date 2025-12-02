@@ -84,16 +84,16 @@ export default function WhatWeCreateComponent() {
             {/* CLOSED HEADER */}
             <div className={`flex justify-between items-center md:px-6  ${isOpen ? "pointer-events-none" : "py-4 md:py-6 px-4 md:px-6"}`}>
               <h3
-                className={`font-[unbounded] text-[16px] sm:text-[24px] lg:text-[32px] font-medium text-[#0f1724]  transition-all duration-300 ${
-                  isOpen ? "opacity-0 -translate-y-2 pointer-events-none" : ""
+                className={`font-[unbounded]  sm:text-[24px] lg:text-[32px] font-medium text-[#0f1724]  transition-all duration-300 ${
+                  isOpen ? "opacity-0 -translate-y-2 pointer-events-none text-[1px]" : "text-[16px]"
                 }`}
               >
                 {item.shortTitle || item.title}
               </h3>
 
               <span
-                className={`font-[unbounded] text-[16px] sm:text-[24px] lg:text-[32px] font-medium text-[#0f1724]  transition-all duration-300 ${
-                  isOpen ? "opacity-0 -translate-y-2 pointer-events-none" : ""
+                className={`font-[unbounded]  sm:text-[24px] lg:text-[32px] font-medium text-[#0f1724]  transition-all duration-300 ${
+                  isOpen ? "opacity-0 -translate-y-2 pointer-events-none text-[1px]" : "text-[16px]"
                 }`}
               >
                 {item.number}
@@ -108,9 +108,9 @@ export default function WhatWeCreateComponent() {
                   : "opacity-0 max-h-0 -translate-y-4"
               }`}
             >
-              <div className="px-4 md:px-6 pb-6 flex flex-col md:flex-row gap-4">
+              <div className="p-4 md:p-6  flex flex-col md:flex-row gap-4">
                 <div className="flex-1 bg-white rounded-xl md:rounded-3xl p-6">
-                  <h2 className="font-[unbounded] text-[16px] sm:text-[24px] lg:text-[32px] font-medium mb-4 text-[#0f1724] leading-tight mb-14 md:mb-10 xl:mb-20">
+                  <h2 className="font-[unbounded] text-[16px] sm:text-[24px] lg:text-[32px] font-medium mb-4 text-[#0f1724] leading-tight  md:mb-10 xl:mb-20">
                     {item.number}
                   </h2>
 
@@ -127,7 +127,7 @@ export default function WhatWeCreateComponent() {
                     alt={item.title}
                     width={900}
                     height={600}
-                    className="rounded-3xl object-cover h-full w-full"
+                    className="rounded-xl md:rounded-3xl object-cover h-full w-full"
                   />
                 </div>
               </div>
