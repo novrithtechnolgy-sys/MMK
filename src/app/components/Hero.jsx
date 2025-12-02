@@ -2,7 +2,7 @@ import WhatWeCreate from "./WhatWeCreate";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden py-20">
+    <section className="relative overflow-hidden pt-20 md:py-20">
  
       {/* EXACT COLOR MATCH — layered warm gradients */}
       {/* Soft peach glow top-left */}
