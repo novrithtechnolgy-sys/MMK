@@ -66,7 +66,7 @@ export default function WhyChoose() {
               "A deep understanding of what attracts modern buyers and high-end clients.",
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-2 ">
-                <FaCheckCircle className="text-white mt-[4px] w-[10px] h-[10px] flex-shrink-0 items-center"  />
+                <FaCheckCircle className="text-white mt-[5px] w-[12px] h-[12px] flex-shrink-0 items-center"  />
                 <p className="leading-relaxed">{item}</p>
               </div>
             ))}

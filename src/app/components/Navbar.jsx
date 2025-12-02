@@ -2,11 +2,13 @@
 
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const pathname = usePathname(); // <-- Active route
     
     // Detect scrolling
     useEffect(() => {
@@ -20,7 +22,7 @@ export default function Navbar() {
 
   // Navigation items array
   const navItems = [
-    { name: "Home", href: "#" },
+    { name: "Home", href: "/" },
     { name: "About Us", href: "#" },
     { name: "Our Work", href: "#" },
     { name: "Contact", href: "#" },
@@ -41,15 +43,27 @@ export default function Navbar() {
           /> 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-10 text-[18px] font-medium">
-          {navItems.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="font-poppins hover:text-orange-500 transition"
-            >
-              {item.name}
-            </a>
-          ))}
+          {navItems.map((item) => {
+            const isActive = pathname === item.href;
+
+            return (
+              <a
+                key={item.name}
+                href={item.href}
+                className={`
+                  font-poppins transition relative
+                  ${isActive ? "text-orange-500" : "text-gray-700"}
+                `}
+              >
+                {item.name}
+
+                {/* Active underline */}
+                {isActive && (
+                  <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-orange-500 rounded-full"></span>
+                )}
+              </a>
+            );
+          })}
         </div>
 
         {/* Desktop Join Button */}
@@ -72,17 +86,24 @@ export default function Navbar() {
           open ? "opacity-100 max-h-[300px]" : "opacity-0 max-h-0 overflow-hidden"
         }`}
       >
-        <div className="flex flex-col py-4 px-8 gap-5 text-[18px] font-medium">
-          {navItems.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              onClick={() => setOpen(false)}
-              className="py-2 border-b border-gray-200 hover:text-orange-500 transition"
-            >
-              {item.name}
-            </a>
-          ))}
+        <div className="flex flex-col py-2 px-[20px] gap-5 text-[14px] font-medium">
+          {navItems.map((item) => {
+            const isActive = pathname === item.href;
+
+            return (
+              <a
+                key={item.name}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className={`
+                  transition font-poppins
+                  ${isActive ? "text-orange-500" : "text-gray-700"}
+                `}
+              >
+                {item.name}
+              </a>
+            );
+          })}
 
           <button className="bg-orange-400 text-white py-2 rounded-full shadow-md hover:bg-orange-500 transition">
             Join

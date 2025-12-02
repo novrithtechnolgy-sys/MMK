@@ -51,7 +51,7 @@ export default function Hero() {
       </div>
       </div>
       {/* End of House Image */}
-      <div className="relative py-20 px-6 px-[20px] md:px-[50px] lg:px-[100px] bg-transparent z-10 overflow-hidden">
+      <div className="relative py-20  px-[20px] md:px-[50px] lg:px-[100px] bg-transparent z-10 overflow-hidden">
         <div className="absolute top-0 left-0 -translate-y-6 -translate-x-8 -rotate-162 w-12 h-10 md:w-16 md:h-12 lg:w-32 lg:h-22 bg-[#FF8A3D] rounded-md mt-10"></div>
         <div className="absolute top-0 right-0 -translate-y-6 translate-x-8 rotate-22 w-12 h-10 md:w-16 md:h-12 lg:w-34 lg:h-22 bg-[#FF8A3D] rounded-md mt-44"></div>
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left md:items-start  mb-10">
