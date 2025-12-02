@@ -118,7 +118,7 @@ export default function WhatWeCreateComponent() {
                     {item.title}
                   </h2>
 
-                  <p className="font-[poppins] text-gray-700 text-[10px] sm:text-[14px] lg:text-[18px] leading-relaxed font-medium">{item.description}</p>
+                  <p className="font-[poppins] text-[#B3B3B3] text-[10px] sm:text-[14px] lg:text-[18px] leading-relaxed font-medium">{item.description}</p>
                 </div>
 
                 <div className="w-full md:w-4/7 rounded-3xl">

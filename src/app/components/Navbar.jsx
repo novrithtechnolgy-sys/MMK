@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <nav className={`absolute z-20 w-full 
     ${isScrolled ? "fixed bg-white/90 " : "absolute bg-transparent"}`}>
-      <div className="px-4 md:px-[50px] lg:px-[100px] mx-auto flex justify-between items-center py-4 bg-transparent">
+      <div className="px-4 md:px-[50px] lg:px-[100px] mx-auto flex justify-between items-center py-3 md:py-4 bg-transparent">
 
         {/* Logo */}
         <Image
@@ -37,7 +37,7 @@ export default function Navbar() {
             alt="Logo"
             width={100}
             height={100}
-            className="w-auto h-10 "    
+            className="w-auto h-8 md:h-10 "    
           /> 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-10 text-[18px] font-medium">
@@ -59,7 +59,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-3xl text-[#0f1724]"
+          className="md:hidden text-[22px] text-[#0f1724]"
           onClick={() => setOpen(!open)}
         >
           {open ? <FaTimes /> : <FaBars />}

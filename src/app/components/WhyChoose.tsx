@@ -11,7 +11,7 @@ export default function WhyChoose() {
           <h2 className="font-[unbounded] text-[20px] sm:text-[30px] lg:text-[40px] font-medium leading-tight mb-4 md:mb-10">
             Why Real Estate Brands & <br /> Designers Choose <br /> MarketMyKeys
           </h2>
-            <p className="md:hidden font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-medium">
+            <p className="md:hidden font-[poppins] text-[14px] sm:text-[14px] lg:text-[18px] font-medium">
                 High-quality visuals aren't a luxury—they're a necessity.  
                 <br />
                 We understand the psychology of your audience:

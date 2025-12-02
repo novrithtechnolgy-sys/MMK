@@ -22,20 +22,20 @@ export default function Hero() {
               Transforming Properties & <br /> Designs Into Visuals
             </h1>
 
-            <button className="hidden md:block bg-orange-400 text-white sm:px-6 sm:py-2 lg:px-8 lg:py-3 rounded-full text-[8px] sm:text-[12px] lg:text-[16px] shadow-md hover:bg-orange-500 transition">
+            <button className="hidden md:block bg-orange-400 w-[200px] text-white sm:px-6 sm:py-2 lg:px-8 lg:py-3 rounded-full text-[8px] sm:text-[12px] lg:text-[16px] shadow-md hover:bg-orange-500 transition">
               Contact Us
             </button>
           </div>
 
           <div className="w-full lg:w-1/2 text-[#B3B3B3] max-w-lg text-center md:text-left">
-            <p className="font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-regular leading-relaxed">
+            <p className="font-[poppins] text-[14px] sm:text-[14px] lg:text-[18px] font-regular leading-relaxed">
               At MarketMyKeys, we reveal the true essence of every property. From cozy homes
               to luxury villas and modern apartments, we create impactful real estate visuals
-              that turn interest into inquiries and views into offers — driving serious buyers
+              that turn interest into inquiries and views into offers, driving serious buyers
               to take action.
             </p>
           </div>
-            <button className="md:hidden bg-orange-400 w-[130px] text-white px-6 py-2 rounded-full text-[12px] shadow-md hover:bg-orange-500 transition">
+            <button className="md:hidden bg-orange-400 w-[150px] text-white px-6 py-2 rounded-full text-[12px] shadow-md hover:bg-orange-500 transition">
               Contact Us
             </button>
         </div>
@@ -59,7 +59,7 @@ export default function Hero() {
                 What We Create
             </h2>
 
-            <p className="text-gray-600 max-w-lg md:max-w-[300px] lg:max-w-md mt-4 md:mt-0 font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-regular  leading-relaxed">
+            <p className="text-[#B3B3B3] max-w-lg md:max-w-[300px] lg:max-w-md mt-4 md:mt-0 font-[poppins] text-[14px] sm:text-[14px] lg:text-[18px] font-regular  leading-relaxed">
                 We use world-class equipment, careful planning, and artistic insight to
                 deliver content that truly showcases your space.
             </p>

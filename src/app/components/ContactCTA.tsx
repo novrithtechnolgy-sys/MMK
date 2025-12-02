@@ -10,17 +10,17 @@ export default function ContactCTA() {
           background: "linear-gradient(178deg, #FEB47B 0%, #FFEEDD 40%, #FFFFFF 100%)",
         }}
       >
-        <h2 className="font-[unbounded] text-[16px] sm:text-[24px] lg:text-[32px] font-medium text-[#1E1E1E] text-center w-full">
+        <h2 className="font-[unbounded] text-[14px] sm:text-[24px] lg:text-[32px] font-medium text-[#1E1E1E] text-center w-full">
           Let's Showcase Your Vision
         </h2>
 
-        <p className="text-gray-600 mt-3 text-center font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] w-full">
+        <p className="text-gray-600 mt-2 md:mt-2 text-center font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] w-full">
           Drop a message — you never know where one connection could lead.
         </p>
 
-        <div className="flex justify-center mt-8">
+        <div className="flex justify-center mt-2 md:mt-8">
           <button
-            className="px-2 md:px-10 py-3 rounded-full text-white font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-medium"
+            className="px-2 py-2 md:py-3 w-[150px] md:w-[200px] rounded-full text-white font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-medium"
             style={{
               background: "linear-gradient(90deg, #FF8A3D, #FFA45B)",
             }}
