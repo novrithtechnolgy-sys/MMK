@@ -33,7 +33,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Image
-            src="/logo.png"
+            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764655637/ygzr438mkjyamx3vmpd9.png"
             alt="Logo"
             width={100}
             height={100}

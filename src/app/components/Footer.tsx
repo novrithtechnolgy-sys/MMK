@@ -1,6 +1,7 @@
 "use client";
 
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -11,13 +12,10 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:justify-between items-center w-full">
           
           {/* Logo */}
-            <img
-            src="/1.svg"
-            alt="Icon"
-            width={100}
-            height={100}
-            className="w-20 h-20"
-            />
+            <Image src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764655875/pcseadvjnildtv2g9nlo.png" 
+            alt="Logo" 
+            width={100} 
+            height={100} />
 
           {/* Menu */}
           <nav className="flex flex-wrap justify-center gap-8 text-[15px] mt-6 md:mt-0 font-medium">
