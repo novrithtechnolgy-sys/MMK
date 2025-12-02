@@ -10,8 +10,8 @@ export default function WhyClientsTrustUs() {
   ];
 
   return (
-    <section className="px-[20px] md:px-[50px] lg:px-[100px] md:py-20 pb-12 md:pb-0">
-      <div className="flex flex-col md:flex-row justify-between w-full rounded-[40px] overflow-hidden xl:h-[500px]">
+    <section className="px-[20px] md:px-[50px] lg:px-[100px] md:pt-20 pb-12 md:pb-20">
+      <div className="flex flex-col md:flex-row justify-between w-full rounded-xl md:rounded-3xl overflow-hidden xl:h-[500px]">
 
         {/* LEFT IMAGE */}
         <div className="relative overflow-hidden bg-gray-100 md:w-1/2">
@@ -25,7 +25,7 @@ export default function WhyClientsTrustUs() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="bg-[#FF9557] px-8 md:px-14 py-12 md:py-20 flex flex-col justify-center  text-white w-full md:w-1/2">
+        <div className="bg-[#FF9557] px-4 md:px-14 py-4 md:py-20 flex flex-col justify-center  text-white w-full md:w-1/2">
           <h2 className="font-[unbounded] text-[20px] sm:text-[30px] lg:text-[40px] font-medium mb-8">
             Why Clients Trust Us
           </h2>

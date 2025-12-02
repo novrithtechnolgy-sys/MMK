@@ -21,11 +21,11 @@ export default function WorkBlendSection() {
 
   return (
     <section className="px-[20px] md:px-[50px] lg:px-[100px] md:py-10 md:mb-20">
-      <h2 className="font-[unbounded] text-[20px] sm:text-[30px] lg:text-[40px] font-medium text-gray-800 mb-4">
+      <h2 className="font-[unbounded] text-[20px] sm:text-[30px] lg:text-[40px] font-medium text-gray-800  md:mb-4">
         Our Formula
       </h2>
 
-      <p className="text-[14px] sm:text-[16px] lg:text-[18px] font-[poppins] leading-relaxed text-[#B3B3B3] mb-12">
+      <p className="text-[14px] sm:text-[16px] lg:text-[18px] font-[poppins] leading-relaxed text-[#B3B3B3] mb-6 md:mb-12">
         Our work blends:
       </p>
 
@@ -33,13 +33,13 @@ export default function WorkBlendSection() {
         {items.map((item, index) => (
           <div
             key={index}
-            className="bg-[#FF9555] text-white rounded-3xl p-8 shadow-sm flex flex-col justify-center"
+            className="bg-[#FF9555] text-white rounded-xl md:rounded-3xl p-4 md:p-8 shadow-sm flex flex-col justify-center"
           >
             {/* ICON */}
-            <div className="text-4xl mb-4">{item.icon}</div>
+            <div className="text-4xl mb-2 md:mb-4">{item.icon}</div>
 
             {/* TITLE */}
-            <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+            <h3 className="text-xl font-semibold md:mb-2">{item.title}</h3>
 
             {/* DESCRIPTION */}
             <p className="text-white/90 text-sm leading-relaxed">

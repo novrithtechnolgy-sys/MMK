@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MissionSection() {
   return (
-    <section className="px-[20px] md:px-[50px] lg:px-[100px] py-20">
+    <section className="px-[20px] md:px-[50px] lg:px-[100px] pt-12 pb-6 md:py-20">
       <div className="flex md:flex-row gap-8 overflow-hidden md:h-[500px]">
         
         {/* LEFT SIDE */}
