@@ -109,12 +109,12 @@ export default function WhatWeCreateComponent() {
               }`}
             >
               <div className="p-4 md:p-6  flex flex-col md:flex-row gap-4">
-                <div className="flex-1 bg-white rounded-xl md:rounded-3xl p-6">
-                  <h2 className="font-[unbounded] text-[16px] sm:text-[24px] lg:text-[32px] font-medium mb-4 text-[#0f1724] leading-tight  md:mb-10 xl:mb-20">
+                <div className="flex-1 bg-white rounded-xl md:rounded-3xl p-6 ">
+                  <h2 className="font-[unbounded] text-[16px] sm:text-[24px] lg:text-[32px] font-medium mb-4 text-[#0f1724] leading-tight  md:mb-10 xl:mb-10">
                     {item.number}
                   </h2>
 
-                  <h2 className="font-[unbounded] text-[16px] sm:text-[24px] lg:text-[32px] font-medium mb-4 text-[#0f1724] leading-tight">
+                  <h2 className="font-[unbounded] text-[16px] sm:text-[24px] lg:text-[32px] font-medium mb-4 text-[#0f1724] leading-tight xl:mb-10">
                     {item.title}
                   </h2>
 
