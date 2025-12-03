@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FF9652] text-white px-6 md:px-[100px] py-10">
+    <footer className="bg-[#FF9652] text-white px-[20px] md:px-[50px] lg:px-[100px] py-10">
       <div className=" mx-auto flex flex-col items-center text-center gap-8">
 
         {/* Top Section */}
@@ -15,7 +15,8 @@ export default function Footer() {
             <Image src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764655875/pcseadvjnildtv2g9nlo.png" 
             alt="Logo" 
             width={100} 
-            height={100} />
+            height={100} 
+            className="w-auto h-8 md:h-10 object-contain"/>
 
           {/* Menu */}
           <nav className="flex flex-wrap justify-center gap-4 md:gap-8 text-[12px] md:text-[16px] lg:text-[18px] mt-6 md:mt-0 font-medium">
