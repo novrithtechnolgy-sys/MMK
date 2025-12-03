@@ -38,7 +38,7 @@ export default function CinematicVideoSection() {
         </p>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-3 md:gap-4 mt-6">
+        <div className="flex flex-wrap gap-2 md:gap-4 mt-5">
           {[
             "Smooth gimbal movements.",
             "Close-up lifestyle and detail shots.",
@@ -55,7 +55,7 @@ export default function CinematicVideoSection() {
         </div>
 
         {/* Video Preview Box */}
-          <div className="mt-12 border-2 border-orange-300 rounded-2xl overflow-hidden relative">
+          <div className=" mt-6 md:mt-12 border-2 border-orange-300 rounded-2xl overflow-hidden relative">
 
         {/* Auto-play video */}
         <video

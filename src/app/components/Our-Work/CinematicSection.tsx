@@ -34,10 +34,10 @@ export default function CinematicSection() {
     <section className="w-full  py-16 px-[20px] md:px-[50px] lg:px-[100px]">
 
       {/* TEXT */}
-      <h2 className="font-[unbounded] text-[20px] sm:text-[30px] lg:text-[40px] font-medium mb-4">
+      <h2 className="font-[unbounded] text-[20px] sm:text-[30px] lg:text-[40px] font-medium mb-2">
         Natural Light & True Tone Grading
       </h2>
-      <p className="font-[poppins] text-[14px] sm:text-[16px] lg:text-[18px] text-[#B3B3B3] leading-relaxed max-w-7xl mb-10">
+      <p className="font-[poppins] text-[14px] sm:text-[16px] lg:text-[18px] text-[#B3B3B3] leading-relaxed max-w-7xl mb-6">
         We avoid the "over-processed" look. We showcase not just rooms, but ambiance and  emotion—the things buyers and design clients truly respond to.
       </p>
 
