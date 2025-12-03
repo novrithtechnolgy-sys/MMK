@@ -8,6 +8,35 @@ import { FaDrawPolygon, FaHome } from "react-icons/fa";
 export default function InteriorPhotography() {
   const [open, setOpen] = useState("realEstate");
 
+  // Slider index
+const [index, setIndex] = useState(0);
+
+// Touch positions for swipe
+const [touchStartX, setTouchStartX] = useState(0);
+const [touchEndX, setTouchEndX] = useState(0);
+
+const onTouchStart = (e: React.TouchEvent) => {
+  setTouchStartX(e.touches[0].clientX);
+};
+
+const onTouchMove = (e: React.TouchEvent) => {
+  setTouchEndX(e.touches[0].clientX);
+};
+
+const onTouchEnd = () => {
+  const swipeDistance = touchStartX - touchEndX;
+
+  if (swipeDistance > 50) {
+    // swipe left
+    setIndex((prev) => Math.min(prev + 1, realEstateImages.length - 1));
+  }
+  if (swipeDistance < -50) {
+    // swipe right
+    setIndex((prev) => Math.max(prev - 1, 0));
+  }
+};
+
+
   // 3 images for Real Estate Mode
   const realEstateImages = [
     "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734202/ykxdxmwu91muxr6e6fqd.jpg",
@@ -59,7 +88,7 @@ export default function InteriorPhotography() {
 
       {/* REAL ESTATE IMAGES */}
       {open === "realEstate" && (
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
+        <div className="hidden md:grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
           {realEstateImages.map((src, idx) => (
             <div
               key={idx}
@@ -73,6 +102,44 @@ export default function InteriorPhotography() {
               />
             </div>
           ))}
+        </div>
+      )}
+
+      {/* REAL ESTATE IMAGES — MOBILE SLIDER */}
+      {open === "realEstate" && (
+        <div className="md:hidden relative mb-12 ">
+          <div
+            className="overflow-hidden rounded-2xl"
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
+          >
+            <div
+              className="flex transition-transform duration-500"
+              style={{ transform: `translateX(-${index * 100}%)` }}
+            >
+              {realEstateImages.map((src, i) => (
+                <div key={i} className="min-w-full ">
+                  <div className="rounded-xl overflow-hidden shadow-md bg-gray-200 h-64 relative">
+                    <Image src={src} alt={`Real Estate Photo ${i + 1}`} fill className="object-cover" />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Indicator Dots */}
+            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+              {realEstateImages.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setIndex(i)}
+                  className={`h-1  rounded-full transition-all ${
+                    i === index ? "bg-[#ff8f4c] w-6" : " w-2 bg-gray-300"
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       )}
 
@@ -103,7 +170,7 @@ export default function InteriorPhotography() {
 
       {/* DESIGN IMAGES */}
       {open === "design" && (
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6">
+        <div className="hidden md:grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6">
           {designImages.map((src, idx) => (
             <div
               key={idx}
@@ -117,6 +184,43 @@ export default function InteriorPhotography() {
               />
             </div>
           ))}
+        </div>
+      )}
+      {/* DESIGN IMAGES — MOBILE SLIDER */}
+      {open === "design" && (
+        <div className="md:hidden relative mb-12 mt-6">
+          <div
+            className="overflow-hidden rounded-2xl"
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
+          >
+            <div
+              className="flex transition-transform duration-500"
+              style={{ transform: `translateX(-${index * 100}%)` }}
+            >
+              {designImages.map((src, i) => (
+                <div key={i} className="min-w-full">
+                  <div className="rounded-xl overflow-hidden shadow-md bg-gray-200 h-64 relative">
+                    <Image src={src} alt={`Design Photo ${i + 1}`} fill className="object-cover" />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Indicator */}
+            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+              {designImages.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setIndex(i)}
+                  className={`h-1  rounded-full transition-all ${
+                    i === index ? "bg-[#ff8f4c] w-6" : "bg-gray-300 w-2"
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       )}
     </section>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function CinematicVideoSection() {
   return (
-    <section className="w-full py-20  px-[20px] md:px-[50px] lg:px-[100px]">
+    <section className="w-full md:py-20  px-[20px] md:px-[50px] lg:px-[100px]">
       <div className="">
 
         {/* Heading */}
@@ -12,12 +12,12 @@ export default function CinematicVideoSection() {
         </h2>
 
         {/* Sub description */}
-        <p className="text-[#B3B3B3] mt-2 md:mt-2 font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px]">
+        <p className="text-[#B3B3B3] mt-2 md:mt-2 font-[poppins] text-[14px] sm:text-[16px] lg:text-[18px]">
           Our video tours use:
         </p>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-4 mt-6">
+        <div className="flex flex-wrap gap-3 md:gap-4 mt-6">
           {[
             "Smooth gimbal movements.",
             "Close-up lifestyle and detail shots.",
@@ -26,7 +26,7 @@ export default function CinematicVideoSection() {
           ].map((item, index) => (
             <span
               key={index}
-              className="px-5 py-2 border-2 border-orange-300 rounded-full text-gray-700 text-sm"
+              className=" px-3 md:px-5 py-1 md:py-2 border-1 md:border-2 border-orange-300 rounded-full text-gray-700 font-[poppins] text-[14px] sm:text-[16px] lg:text-[18px]"
             >
               {item}
             </span>
@@ -35,7 +35,7 @@ export default function CinematicVideoSection() {
 
         {/* Video Preview Box */}
         <div className="mt-12 border-2 border-orange-300 rounded-2xl overflow-hidden">
-          <div className="relative w-full h-[350px] md:h-[450px] lg:h-[520px]">
+          <div className="relative w-full h-[250px] md:h-[450px] lg:h-[520px]">
 
             {/* Replace with your image */}
             <Image
