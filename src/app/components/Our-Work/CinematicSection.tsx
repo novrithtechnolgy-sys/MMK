@@ -12,8 +12,8 @@ export default function CinematicSection() {
 
   // Images
   const images = [
-    "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764666431/h2ufoklfrhu71ya7k1rf.jpg",
-    "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764666431/h2ufoklfrhu71ya7k1rf.jpg",
+    "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764761962/lgpehaodjn3xvvrpzoaj.jpg",
+    "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764761952/chmlsx4d7fppnqjct9tk.jpg",
   ];
 
   // Touch logic
@@ -48,7 +48,7 @@ export default function CinematicSection() {
           {/* IMAGE 1 */}
           <div className="w-full h-[350px] md:h-[420px] relative rounded-2xl overflow-hidden">
             <Image
-              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764666431/h2ufoklfrhu71ya7k1rf.jpg"   // UPDATE this path
+              src={images[0]}   // UPDATE this path
               alt="Cinematic interior"
               fill
               className="object-cover"
@@ -58,7 +58,7 @@ export default function CinematicSection() {
           {/* IMAGE 2 */}
           <div className="w-full h-[350px] md:h-[420px] relative rounded-2xl overflow-hidden">
             <Image
-              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764666431/h2ufoklfrhu71ya7k1rf.jpg"  // UPDATE this path
+              src={images[1]}  // UPDATE this path
               alt="Cinematic interior"
               fill
               className="object-cover"

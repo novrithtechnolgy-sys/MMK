@@ -1,7 +1,28 @@
 "use client";
 import Image from "next/image";
+import { useRef, useState } from "react";
 
 export default function CinematicVideoSection() {
+
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  const togglePlay = () => {
+    if (!videoRef.current) return;
+
+    if (isPlaying) {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      videoRef.current.play();
+      setIsPlaying(true);
+    }
+  };
+
+     const videoURL =
+    "https://homeinsiders.com/images/media/Cinematic-Videos-1300-Sabal-Palm-Drive-Boca-Raton.mp4";
+
+
   return (
     <section className="w-full md:py-20  px-[20px] md:px-[50px] lg:px-[100px]">
       <div className="">
@@ -34,26 +55,41 @@ export default function CinematicVideoSection() {
         </div>
 
         {/* Video Preview Box */}
-        <div className="mt-12 border-2 border-orange-300 rounded-2xl overflow-hidden">
-          <div className="relative w-full h-[250px] md:h-[450px] lg:h-[520px]">
+          <div className="mt-12 border-2 border-orange-300 rounded-2xl overflow-hidden relative">
 
-            {/* Replace with your image */}
-            <Image
-              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764666431/h2ufoklfrhu71ya7k1rf.jpg"
-              alt="Video Preview"
-              fill
-              className="object-cover"
-            />
-
-            {/* Play Button */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-20 h-20 rounded-full bg-white/60 backdrop-blur-sm flex items-center justify-center cursor-pointer hover:bg-white/80 transition">
-                <div className="w-0 h-0 border-t-[15px] border-t-transparent border-l-[25px] border-l-black border-b-[15px] border-b-transparent ml-1"></div>
-              </div>
+        {/* Auto-play video */}
+        <video
+          ref={videoRef}
+          src="https://homeinsiders.com/images/media/Cinematic-Videos-1300-Sabal-Palm-Drive-Boca-Raton.mp4"
+          loop
+          muted
+          playsInline
+          className="w-full h-[250px] md:h-[450px] lg:h-[520px] object-cover"
+        />
+        {/* Play Button (center) */}
+         <button
+          onClick={togglePlay}
+          className="
+            absolute inset-0 m-auto
+            w-20 h-20 rounded-full
+            bg-white/60 backdrop-blur-sm
+            flex items-center justify-center
+            hover:bg-white/80 transition
+          "
+        >
+          {isPlaying ? (
+            // Pause icon
+            <div className="flex gap-2">
+              <div className="w-[6px] h-[28px] bg-black rounded"></div>
+              <div className="w-[6px] h-[28px] bg-black rounded"></div>
             </div>
+          ) : (
+            // Play icon
+            <div className="w-0 h-0 border-t-[15px] border-t-transparent border-l-[25px] border-l-black border-b-[15px] border-b-transparent ml-2"></div>
+          )}
+        </button>
 
-          </div>
-        </div>
+      </div>
       </div>
     </section>
   );
