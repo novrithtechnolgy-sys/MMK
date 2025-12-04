@@ -44,7 +44,7 @@ export default function SocialMediaReel() {
   }, [apiReady]);
 
   return (
-    <section className="w-full md:py-20  px-[20px] md:px-[50px] lg:px-[100px]">
+    <section className="w-full pt-16 md:py-20  px-[20px] md:px-[50px] lg:px-[100px]">
       <h3 className="font-[unbounded] text-[20px] sm:text-[30px] lg:text-[40px] font-medium mb-2">
         Social Media Reels
       </h3>
