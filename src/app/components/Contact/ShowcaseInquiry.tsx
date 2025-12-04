@@ -3,82 +3,114 @@
 import Image from "next/image";
 import { FiUser, FiMail, FiPhone, FiMapPin, FiLayers, FiMessageSquare } from "react-icons/fi";
 
-const IMAGES = [
+const COLUMN_WIDTHS = ["190px", "340px", "340px", "190px"]; // Adjust these values as needed
+
+const COLUMNS = [
+  [
   "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764761974/gldjzjczchf9hs9txp6q.jpg",
-  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764761974/gldjzjczchf9hs9txp6q.jpg",
-  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764761974/gldjzjczchf9hs9txp6q.jpg",
-  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764761974/gldjzjczchf9hs9txp6q.jpg",
-  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764761974/gldjzjczchf9hs9txp6q.jpg",
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764761962/lgpehaodjn3xvvrpzoaj.jpg",
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764761952/chmlsx4d7fppnqjct9tk.jpg",
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734209/nouyj2g6skqelftj5pi1.jpg",
+],
+  [
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734196/yyugyverzjvaqn9tpje2.jpg",
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734188/b58qghyhca1mbtl2ekka.jpg",
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764663056/o82nlop0rxohari1s4lx.jpg",
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734209/nouyj2g6skqelftj5pi1.jpg",
+],
+  [
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764862462/sn9lfr4vu5w9ymfgz65d.jpg",
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764862461/hkcbei0nawqryocmo7y2.jpg",
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764862461/tj7fb7oj3ioiy3yoazuo.jpg",
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764862461/fwmqqhfhrk9k4l7s5x5g.jpg",
+],
+  [
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764658978/hwuc9r36oxpgi0qmfy7h.jpg",
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764761962/lgpehaodjn3xvvrpzoaj.jpg",
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764761952/chmlsx4d7fppnqjct9tk.jpg",
+  "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734209/nouyj2g6skqelftj5pi1.jpg",
+],
 ];
+
 
 export default function ShowcaseInquiry() {
   const columns = [
     { direction: "scroll-up" },
     { direction: "scroll-down" },
     { direction: "scroll-up" },
+    { direction: "scroll-down" },
   ];
 
   return (
-    <section className="px-6 md:px-16 lg:px-24 py-20 bg-[#F5F5F5]">
+    <section className="px-[20px] md:px-[50px] lg:px-[100px] py-20 md:py-25 bg-[#F5F5F5] bg-blank">
       
       {/* HEADER */}
-      <div className="max-w-5xl mx-auto mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold">Let's Showcase Your Vision</h1>
-        <p className="text-gray-500 mt-4 max-w-2xl">
+      <div className="mb-12">
+        <h1 className="font-[unbounded] text-[20px] sm:text-[30px] lg:text-[40px] font-medium leading-tight">Let's Showcase Your Vision</h1>
+        <p className="mt-2 md:mt-6 font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3]">
           Whether you're selling a house, launching a new development, 
           or documenting your latest interior design project—we create visuals that deliver results.
         </p>
       </div>
 
       {/* MAIN GRID */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full max-w-7xl mx-auto ">
+      <div className="flex flex-col lg:flex-row gap-6 w-full">
 
-        {/* LEFT AUTO-SCROLL COLUMNS */}
-        <div className="grid grid-cols-3 gap-4 w-full h-[600px] md:h-[850px] overflow-hidden rounded-3xl order-2 lg:order-1">
-          {columns.map((col, colIndex) => (
-            <div key={colIndex} className="relative overflow-hidden">
-              <div className={`flex flex-col gap-4 ${col.direction}`}>
-                
-                {/* Original list */}
-                {IMAGES.map((src, i) => (
+
+      {/* LEFT AUTO-SCROLL COLUMNS */}
+        <div className="flex gap-1 md:gap-4 w-full h-[600px] md:h-[850px] overflow-hidden rounded-3xl order-2 lg:order-1">
+          {COLUMNS.map((images, colIndex) => (
+            <div
+              key={colIndex}
+              className="relative overflow-hidden"
+              style={{ width: COLUMN_WIDTHS[colIndex] }}   // ← CUSTOM WIDTH HERE
+            >
+              <div className={`flex flex-col gap-1 md:gap-3 ${colIndex % 2 === 0 ? "scroll-up" : "scroll-down"}`}>
+
+                {/* ORIGINAL IMAGES */}
+                {images.map((src, i) => (
                   <div key={i} className="rounded-xl overflow-hidden">
                     <Image
                       src={src}
                       alt="Gallery"
-                      width={500}
-                      height={600}
-                      className="w-full h-60 object-cover"
+                      width={300}
+                      height={450}
+                      className="object-cover rounded-xl h-[220px] md:h-[320px]"
+                      style={{width: "100%"  }} // ← CUSTOM IMAGE SIZE HERE
                     />
                   </div>
                 ))}
 
-                {/* Duplicate images for infinite scroll */}
-                {IMAGES.map((src, i) => (
+                {/* DUPLICATES FOR INFINITE SCROLL */}
+                {images.map((src, i) => (
                   <div key={`dup-${i}`} className="rounded-xl overflow-hidden">
                     <Image
                       src={src}
                       alt="Gallery"
-                      width={500}
-                      height={600}
-                      className="w-full h-60 object-cover"
+                      width={300}
+                      height={450}
+                      className="object-cover rounded-xl h-[220px] md:h-[320px]"
+                      style={{ width: "100%" }} // same height
                     />
                   </div>
                 ))}
+
               </div>
             </div>
           ))}
         </div>
 
+
         {/* RIGHT FORM */}
            {/* RIGHT FORM CARD */}
-        <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 order-1 lg:order-2">
-          <h2 className="text-2xl md:text-3xl font-bold">Send Us an Inquiry</h2>
+        <div className="bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-gray-200 w-full lg:w-6/8 order-1 lg:order-2">
+          <h2 className="font-[poppins] text-[16px] sm:text-[20px] lg:text-[32px] font-semibold">Send Us an Inquiry</h2>
 
-          <p className="text-gray-500 mt-2 text-sm">
+          <p className="font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3] mt-4">
             We'll get back to you within 24 hours.
           </p>
 
-          <p className="font-semibold text-gray-600 mt-4">
+          <p className="font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3]">
             MarketMyKeys – Turning Properties & Designs Into Experiences That Sell.
           </p>
 

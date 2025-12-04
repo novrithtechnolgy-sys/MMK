@@ -23,7 +23,7 @@ body {
 
 /* Scroll Up */
 .scroll-up {
-  animation: scroll-up 45s linear infinite;
+  animation: scroll-up 180s linear infinite;
 }
 
 @keyframes scroll-up {
@@ -37,7 +37,7 @@ body {
 
 /* Scroll Down */
 .scroll-down {
-  animation: scroll-down 50s linear infinite;
+  animation: scroll-down 180s linear infinite;
 }
 
 @keyframes scroll-down {
