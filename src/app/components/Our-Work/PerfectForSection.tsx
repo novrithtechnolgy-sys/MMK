@@ -24,7 +24,7 @@ export default function PerfectForSection() {
         ].map((item, index) => (
           <span
             key={index}
-            className="px-3 md:px-5 py-1 md:py-2 border-1 md:border-2 border-orange-300 rounded-full text-gray-700 font-[poppins] text-[14px] sm:text-[16px] lg:text-[18px]"
+            className="px-3 md:px-5 py-1 md:py-2 border-1 md:border-2 border-orange-300 rounded-full text-gray-700 font-[poppins] text-[12px] sm:text-[16px] lg:text-[18px]"
           >
             {item}
           </span>

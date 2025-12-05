@@ -23,7 +23,7 @@ export default function VirtualTourSection() {
         ].map((text, index) => (
           <div
             key={index}
-            className="px-5 md:px-5 py-1 md:py-2 border-1 md:border-2 border-orange-300 rounded-full text-gray-700 font-[poppins] text-[14px] sm:text-[16px] lg:text-[18px] w-fit"
+            className="px-5 md:px-5 py-1 md:py-2 border-1 md:border-2 border-orange-300 rounded-full text-gray-700 font-[poppins] text-[12px] sm:text-[16px] lg:text-[18px] w-fit"
           >
             {text}
           </div>
