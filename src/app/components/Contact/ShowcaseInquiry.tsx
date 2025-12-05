@@ -103,7 +103,7 @@ export default function ShowcaseInquiry() {
       </div>
 
       {/* MAIN GRID */}
-      <div className="flex flex-col lg:flex-row gap-6 w-full">
+      <div className="flex flex-col md:flex-row gap-6 w-full">
 
 
       {/* LEFT AUTO-SCROLL COLUMNS */}
