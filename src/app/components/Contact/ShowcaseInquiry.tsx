@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { FiUser, FiMail, FiPhone, FiMapPin, FiLayers, FiMessageSquare } from "react-icons/fi";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const COLUMN_WIDTHS = ["190px", "340px", "340px", "190px"]; // Adjust these values as needed
 
@@ -34,6 +36,53 @@ const COLUMNS = [
 
 
 export default function ShowcaseInquiry() {
+    const router = useRouter();
+    const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    location: "",
+    clientType: "",
+    services: "",
+    requiredServices: "",
+    message: "",
+  });
+
+    const handleChange = (e: any) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        router.push("/thank-you");
+      } else {
+        alert("Failed to send email.");
+
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong.");
+    }
+  };
+
+
   const columns = [
     { direction: "scroll-up" },
     { direction: "scroll-down" },
@@ -103,7 +152,7 @@ export default function ShowcaseInquiry() {
 
         {/* RIGHT FORM */}
            {/* RIGHT FORM CARD */}
-        <div className="bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-gray-200 w-full lg:w-6/8 order-1 lg:order-2">
+        <div className="bg-white p-6 md:p-10 rounded-3xl  border border-gray-200 w-full lg:w-6/8 order-1 lg:order-2">
           <h2 className="font-[poppins] text-[16px] sm:text-[20px] lg:text-[32px] font-semibold">Send Us an Inquiry</h2>
 
           <p className="font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3] mt-4">
@@ -120,12 +169,24 @@ export default function ShowcaseInquiry() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-center gap-3 p-3 border rounded-xl bg-gray-50">
                 <FiUser className="text-gray-500" />
-                <input type="text" placeholder="First name" className="bg-transparent w-full outline-none" />
+                <input 
+                type="text" 
+                placeholder="First name"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange} 
+                className="bg-transparent w-full outline-none" />
               </div>
 
               <div className="flex items-center gap-3 p-3 border rounded-xl bg-gray-50">
                 <FiUser className="text-gray-500" />
-                <input type="text" placeholder="Last name" className="bg-transparent w-full outline-none" />
+                <input
+                 type="text" 
+                 placeholder="Last name"
+                 name="lastName"
+                 value={formData.lastName}
+                 onChange={handleChange} 
+                 className="bg-transparent w-full outline-none" />
               </div>
             </div>
 
@@ -133,31 +194,59 @@ export default function ShowcaseInquiry() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-center gap-3 p-3 border rounded-xl bg-gray-50">
                 <FiMail className="text-gray-500" />
-                <input type="email" placeholder="Email Address" className="bg-transparent w-full outline-none" />
+                <input 
+                type="email" 
+                placeholder="Email Address"
+                name="email"
+                value={formData.email}
+                onChange={handleChange} 
+                className="bg-transparent w-full outline-none" />
               </div>
 
               <div className="flex items-center gap-3 p-3 border rounded-xl bg-gray-50">
                 <FiPhone className="text-gray-500" />
-                <input type="text" placeholder="Phone number" className="bg-transparent w-full outline-none" />
+                <input 
+                type="text" 
+                placeholder="Phone number"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange} 
+                className="bg-transparent w-full outline-none" />
               </div>
             </div>
 
             {/* PROJECT LOCATION */}
             <div className="flex items-center gap-3 p-3 border rounded-xl bg-gray-50">
               <FiMapPin className="text-gray-500" />
-              <input type="text" placeholder="Project Location" className="bg-transparent w-full outline-none" />
+              <input type="text" 
+              placeholder="Project Location"
+              name="location"
+              value={formData.location}
+              onChange={handleChange} 
+              className="bg-transparent w-full outline-none" />
             </div>
 
             {/* CLIENT TYPE */}
             <div className="flex items-center gap-3 p-3 border rounded-xl bg-gray-50">
               <FiLayers className="text-gray-500" />
-              <input type="text" placeholder="Client Type" className="bg-transparent w-full outline-none" />
+              <input 
+              type="text" 
+              placeholder="Client Type"
+              name="clientType"
+              value={formData.clientType}
+              onChange={handleChange} 
+              className="bg-transparent w-full outline-none" />
             </div>
 
             {/* REQUIRED SERVICES */}
             <div className="flex items-center gap-3 p-3 border rounded-xl bg-gray-50">
               <FiLayers className="text-gray-500" />
-              <input type="text" placeholder="Required Services" className="bg-transparent w-full outline-none" />
+              <input type="text" 
+              placeholder="Required Services"
+              name="requiredServices"
+              value={formData.requiredServices}
+              onChange={handleChange} 
+              className="bg-transparent w-full outline-none" />
             </div>
 
             {/* MESSAGE */}
@@ -165,6 +254,10 @@ export default function ShowcaseInquiry() {
               <FiMessageSquare className="text-gray-500 mt-1" />
               <textarea
                 placeholder="Message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows={4}
                 className="bg-transparent w-full outline-none h-28 resize-none"
               />
             </div>
@@ -172,11 +265,11 @@ export default function ShowcaseInquiry() {
             {/* BUTTON */}
             <button
               type="submit"
-              className="px-2 py-2 md:py-3 w-[150px] md:w-[200px] rounded-full text-white font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-semibold bg-orange-400 hover:bg-orange-500"
+              onClick={handleSubmit}
+              className="px-2 py-2 md:py-3 w-[150px] md:w-[200px] rounded-full text-white font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-semibold bg-orange-400 hover:bg-orange-500 cursor-pointer"
             >
               Send Message
             </button>
-
           </form>
         </div>
 

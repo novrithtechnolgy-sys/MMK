@@ -12,7 +12,7 @@ export default function WhyChoose() {
             Why Real Estate Brands & <br /> Designers Choose <br /> MarketMyKeys
           </h2>
             <p className="md:hidden font-[poppins] text-[14px] sm:text-[14px] lg:text-[18px] font-medium">
-                High-quality visuals aren't a luxury—they're a necessity.  
+                High-quality visuals aren't a luxury, they're a necessity.  
                 <br />
                 We understand the psychology of your audience:
             </p>

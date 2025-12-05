@@ -18,17 +18,14 @@ export default function ContactCTA() {
         </h2>
 
         <p className="text-gray-600 mt-2 md:mt-2 text-center font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] w-full">
-          Drop a message — you never know where one connection could lead.
+          Drop a message, you never know where one connection could lead.
         </p>
 
         <div className="flex justify-center mt-2 md:mt-8">
           <button
             type="button"
             onClick={() => router.push("/contact")}
-            className="px-2 py-2 md:py-3 w-[150px] md:w-[200px] rounded-full text-white font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-semibold"
-            style={{
-              background: "linear-gradient(90deg, #FF8A3D, #FFA45B)",
-            }}
+            className="px-2 py-2 md:py-3 w-[150px] md:w-[200px] rounded-full text-white font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-semibold hover:bg-orange-500 transition bg-orange-400 hover:bg-orange-500 cursor-pointer"
           >
             Send Message
           </button>
@@ -41,8 +38,8 @@ export default function ContactCTA() {
             <Image
               src="/5292fbf6dd924eb979e09a286dd21fafe5914f59.jpg"
               alt="Contact CTA Image"
-              width={100}
-              height={100}
+              width={1000}
+              height={1000}
               className="w-full h-full object-cover"
             />
           </div>

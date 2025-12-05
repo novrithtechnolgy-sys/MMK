@@ -51,7 +51,7 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-center md:justify-between w-full text-sm text-white/90 gap-4 text-[12px] md:text-[16px] lg:text-[18px]">
-          <p>© 2025 Zinkq. All rights reserved.</p>
+          <p>© 2025 MMK. All rights reserved.</p>
 
           <div className="flex flex-wrap justify-center gap-6">
             <a href="#" className="hover:opacity-80">Privacy policy</a>

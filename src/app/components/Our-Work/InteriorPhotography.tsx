@@ -1,9 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import { FaDrawPolygon, FaHome } from "react-icons/fa";
+import { client } from "./../../../sanity/lib/client";
+import { urlFor } from "../../../sanity/lib/image";
+import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
 export default function InteriorPhotography() {
   const [open, setOpen] = useState("realEstate");
@@ -14,6 +17,37 @@ const [index, setIndex] = useState(0);
 // Touch positions for swipe
 const [touchStartX, setTouchStartX] = useState(0);
 const [touchEndX, setTouchEndX] = useState(0);
+const [realEstateImages, setRealEstateImages] = useState<string[]>([]);
+const [designImages, setDesignImages] = useState<string[]>([]);
+
+  // Fetch Sanity Data
+  useEffect(() => {
+    async function fetchImages() {
+    const realEstate = await client.fetch(`
+      *[_type == "realEstatePhotos"][0]{ images }
+    `);
+
+    const design = await client.fetch(`
+      *[_type == "designPhotos"][0]{ images }
+    `);
+    console.log(realEstateImages);
+    console.log(designImages);
+
+    setRealEstateImages(
+      realEstate?.images?.map((img: SanityImageSource) => urlFor(img).url()) || []
+    );
+    setDesignImages(
+      design?.images?.map((img: SanityImageSource) => urlFor(img).url()) || []
+    );
+    }
+
+    console.log(realEstateImages);
+    console.log(designImages);
+
+
+
+    fetchImages();
+  }, []);
 
 const onTouchStart = (e: React.TouchEvent) => {
   setTouchStartX(e.touches[0].clientX);
@@ -38,18 +72,18 @@ const onTouchEnd = () => {
 
 
   // 3 images for Real Estate Mode
-  const realEstateImages = [
-    "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734202/ykxdxmwu91muxr6e6fqd.jpg",
-    "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734202/ykxdxmwu91muxr6e6fqd.jpg",
-    "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734202/ykxdxmwu91muxr6e6fqd.jpg",
-  ];
+  // const realEstateImages = [
+  //   "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734202/ykxdxmwu91muxr6e6fqd.jpg",
+  //   "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734202/ykxdxmwu91muxr6e6fqd.jpg",
+  //   "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734202/ykxdxmwu91muxr6e6fqd.jpg",
+  // ];
 
   // 3 images for Design Mode
-  const designImages = [
-    "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734209/nouyj2g6skqelftj5pi1.jpg",
-    "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734209/nouyj2g6skqelftj5pi1.jpg",
-    "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734209/nouyj2g6skqelftj5pi1.jpg",
-  ];
+  // const designImages = [
+  //   "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734209/nouyj2g6skqelftj5pi1.jpg",
+  //   "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734209/nouyj2g6skqelftj5pi1.jpg",
+  //   "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734209/nouyj2g6skqelftj5pi1.jpg",
+  // ];
 
   return (
     <section className="w-full  mt-16 md:-mt-16 pb-16 px-[20px] md:px-[50px] lg:px-[100px]">
@@ -66,7 +100,7 @@ const onTouchEnd = () => {
         className="border border-[#ff8f4c] bg-white rounded-2xl p-6 mb-6 cursor-pointer transition-all"
         onClick={() => setOpen(open === "realEstate" ? "" : "realEstate")}
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between ">
           <div className="flex items-center gap-3">
             <FaHome className="text-2xl text-[#ff8f4c]" />
             <h3 className="font-[poppins] text-[16px] sm:text-[18px] lg:text-[24px] font-mediam">Real Estate Mode:</h3>

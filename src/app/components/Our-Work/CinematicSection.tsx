@@ -38,11 +38,11 @@ export default function CinematicSection() {
         Natural Light & True Tone Grading
       </h2>
       <p className="font-[poppins] text-[14px] sm:text-[16px] lg:text-[18px] text-[#B3B3B3] leading-relaxed max-w-7xl mb-6">
-        We avoid the "over-processed" look. We showcase not just rooms, but ambiance and  emotion—the things buyers and design clients truly respond to.
+        We avoid the "over-processed" look. We showcase not just rooms, but ambiance and  emotions. We focus on the things buyers and design clients truly respond to.
       </p>
 
       {/* IMAGE CONTAINER */}
-      <div className="hidden md:block border-2 border-[#ff8f4c] rounded-3xl p-4 md:p-6">
+      <div className="hidden md:block bg-white border-2 border-[#ff8f4c] rounded-3xl p-4 md:p-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
           {/* IMAGE 1 */}

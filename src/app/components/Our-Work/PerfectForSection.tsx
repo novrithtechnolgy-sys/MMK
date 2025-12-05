@@ -32,7 +32,7 @@ export default function PerfectForSection() {
       </div>
 
       {/* IMAGE WRAPPER */}
-      <div className="w-full bg-white border-[1px] border-orange-500 rounded-3xl p-2 md:p-6 shadow-xl mt-6 md:mt-12">
+      <div className="w-full bg-white border-[1px] border-orange-500 rounded-3xl p-2 md:p-6  mt-6 md:mt-12">
         <div className="flex flex-col md:flex-row gap-2 md:gap-6">
           {/* LEFT IMAGE */}
           <div className="relative w-full md:w-1/3 h-[120px] sm:h-[260px] md:h-[380px] rounded-2xl overflow-hidden">

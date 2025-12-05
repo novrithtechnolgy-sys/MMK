@@ -71,7 +71,7 @@ export default function SocialMediaReel() {
       </div>
 
       {/* --- Reel Container --- */}
-      <div className="w-full bg-white rounded-3xl mt-6 md:mt-12">
+      <div className="w-full  rounded-3xl mt-6 md:mt-12">
 
         {/* MOBILE → scroll horizontally  
             DESKTOP → grid of 3 columns */}
@@ -93,7 +93,8 @@ export default function SocialMediaReel() {
               className="
                 relative  
                 snap-center  
-                shrink-0  
+                shrink-0 
+                bg-white 
                 w-full md:w-[260px] h-[460px]  
                 md:w-full md:h-[380px] xl:h-[520px]  
                 rounded-2xl  

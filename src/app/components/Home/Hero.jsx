@@ -28,7 +28,7 @@ export default function Hero() {
 
                 <button
                 onClick={() => router.push("/contact")}
-                 className="hidden md:block bg-orange-400 w-[200px] text-white sm:px-6 sm:py-2 lg:px-8 lg:py-3 rounded-full text-[8px] sm:text-[12px] lg:text-[18px] shadow-md hover:bg-orange-500 transition font-semibold">
+                 className="hidden md:block bg-orange-400 w-[200px] text-white sm:px-6 sm:py-2 lg:px-8 lg:py-3 rounded-full text-[8px] sm:text-[12px] lg:text-[18px] shadow-md hover:bg-orange-500 transition font-semibold cursor-pointer hover:bg-orange-500">
                   Contact Us
                 </button>
               </div>
