@@ -24,7 +24,7 @@ export default function Footer() {
           </a>
 
           {/* Menu */}
-          <nav className="flex flex-wrap justify-center gap-4 md:gap-8 text-[14px] md:text-[16px] lg:text-[18px] mt-6 md:mt-0 font-medium w-full">
+          <nav className="flex flex-wrap justify-center gap-4 md:gap-8 text-[14px] md:text-[16px] lg:text-[18px] mt-6 md:mt-0 font-medium w-full md:w-[1400px] lg:w-[1600px] 2xl:w-full">
             <a href="/" className="hover:opacity-80">Home</a>
             <a href="/about" className="hover:opacity-80">About Us</a>
             <a href="/our-work" className="hover:opacity-80">Our Works</a>
