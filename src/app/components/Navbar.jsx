@@ -4,11 +4,13 @@ import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const pathname = usePathname(); // <-- Active route
+    const router = useRouter();
     
     // Detect scrolling
     useEffect(() => {
@@ -67,7 +69,10 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Join Button */}
-        <button className="hidden font-poppins md:block bg-orange-400 text-white px-6 py-2 rounded-full shadow-md hover:bg-orange-500 transition">
+        <button
+        type="button"
+        onClick={() => router.push("/contact")}
+        className="hidden font-poppins md:block bg-orange-400 text-white px-6 py-2 rounded-full shadow-md hover:bg-orange-500 transition">
           Join
         </button>
 
@@ -86,7 +91,7 @@ export default function Navbar() {
           open ? "opacity-100 max-h-[300px]" : "opacity-0 max-h-0 overflow-hidden"
         }`}
       >
-        <div className="flex flex-col py-2 px-[20px] gap-5 text-[14px] font-medium">
+        <div className="flex flex-col py-2 px-[20px] gap-5 text-[18px] font-medium">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
 
@@ -105,7 +110,7 @@ export default function Navbar() {
             );
           })}
 
-          <button className="bg-orange-400 text-white py-2 rounded-full shadow-md hover:bg-orange-500 transition">
+          <button className="px-2 py-2 md:py-3 w-[150px] md:w-[200px] rounded-full bg-orange-400 text-white font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] font-semibold">
             Join
           </button>
         </div>

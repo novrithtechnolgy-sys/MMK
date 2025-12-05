@@ -58,7 +58,7 @@ export default function ShowcaseInquiry() {
 
 
       {/* LEFT AUTO-SCROLL COLUMNS */}
-        <div className="flex gap-1 md:gap-4 w-full h-[600px] md:h-[850px] overflow-hidden rounded-3xl order-2 lg:order-1">
+        <div className="flex gap-1 md:gap-4 w-full h-[500px] md:h-[850px] overflow-hidden rounded-3xl order-2 lg:order-1">
           {COLUMNS.map((images, colIndex) => (
             <div
               key={colIndex}
@@ -75,7 +75,7 @@ export default function ShowcaseInquiry() {
                       alt="Gallery"
                       width={300}
                       height={450}
-                      className="object-cover rounded-xl h-[220px] md:h-[320px]"
+                      className="object-cover h-[180px] md:h-[320px]"
                       style={{width: "100%"  }} // ← CUSTOM IMAGE SIZE HERE
                     />
                   </div>
@@ -89,7 +89,7 @@ export default function ShowcaseInquiry() {
                       alt="Gallery"
                       width={300}
                       height={450}
-                      className="object-cover rounded-xl h-[220px] md:h-[320px]"
+                      className="object-cover rounded-xl h-[180px] md:h-[320px]"
                       style={{ width: "100%" }} // same height
                     />
                   </div>
@@ -110,7 +110,7 @@ export default function ShowcaseInquiry() {
             We'll get back to you within 24 hours.
           </p>
 
-          <p className="font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3]">
+          <p className="lg:hidden xl:block font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3]">
             MarketMyKeys – Turning Properties & Designs Into Experiences That Sell.
           </p>
 
@@ -172,7 +172,7 @@ export default function ShowcaseInquiry() {
             {/* BUTTON */}
             <button
               type="submit"
-              className="w-full py-4 bg-[#FF9557] text-white rounded-xl font-bold text-lg hover:opacity-90 transition"
+              className="px-2 py-2 md:py-3 w-[150px] md:w-[200px] rounded-full text-white font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-semibold bg-orange-400 hover:bg-orange-500"
             >
               Send Message
             </button>

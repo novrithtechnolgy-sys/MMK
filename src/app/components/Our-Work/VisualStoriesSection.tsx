@@ -11,7 +11,7 @@ export default function VisualStoriesSection() {
           Crafting Visual Stories <br /> That Stop the Scroll
         </h2>
 
-        <p className="font-[poppins] text-[14px] sm:text-[16px] lg:text-[18px] leading-relaxed text-[#B3B3B3] md:w-5/9">
+        <p className="font-[poppins] text-[14px] sm:text-[16px] lg:text-[18px] leading-relaxed text-[#B3B3B3] lg:w-5/9">
           Every property has a strength—location, light, layout, or lifestyle.
           Every design has a story—texture, palette, function, or form. Our job
           is to bring those strengths forward.
@@ -73,7 +73,7 @@ export default function VisualStoriesSection() {
           </div>
           </div>
 
-          <div className="h-[400px]"></div> {/* spacing box */}
+          <div className="h-[350px] lg:h-[400px] xl:h-[450px]"></div> {/* spacing box */}
         </div>
 
 
@@ -138,7 +138,7 @@ export default function VisualStoriesSection() {
           </div>
           </div>
 
-          <div className="h-[400px] sm:h-[600px]"></div> {/* spacing box */}
+          <div className="h-[400px] sm:h-[600px] "></div> {/* spacing box */}
         </div>
     </section>
   );

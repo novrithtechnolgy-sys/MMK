@@ -92,7 +92,7 @@ const onTouchEnd = () => {
           {realEstateImages.map((src, idx) => (
             <div
               key={idx}
-              className="rounded-xl overflow-hidden shadow-md bg-gray-200 h-64 relative"
+              className="rounded-xl overflow-hidden shadow-md bg-gray-200 h-84 relative"
             >
               <Image
                 src={src}
@@ -174,7 +174,7 @@ const onTouchEnd = () => {
           {designImages.map((src, idx) => (
             <div
               key={idx}
-              className="rounded-xl overflow-hidden shadow-md bg-gray-200 h-64 relative"
+              className="rounded-xl overflow-hidden shadow-md bg-gray-200 h-84 relative"
             >
               <Image
                 src={src}

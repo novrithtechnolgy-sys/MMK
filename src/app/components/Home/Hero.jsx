@@ -1,6 +1,10 @@
+"use client";
+
 import WhatWeCreate from "../Home/WhatWeCreate";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
+  const router = useRouter();
   return (
     <section className="relative overflow-hidden pt-20 md:py-20">
  
@@ -13,33 +17,37 @@ export default function Hero() {
 
       {/* Yellow warm glow right side */}
       <div className="absolute inset-0 h-[800px] bg-[radial-gradient(circle_at_80%_32%,rgba(255,210,110,0.75)_0%,transparent_35%)] md:h-[1500px] md:bg-[radial-gradient(circle_at_80%_50%,rgba(255,210,110,0.75)_0%,transparent_45%)]" />
-    <div className="relative flex flex-col" >
-      {/* Content */}
-      <div className="relative z-10 px-[20px] md:px-[50px] lg:px-[100px] md:py-12 order-2 md:order-1">
-        <div className="flex flex-col md:flex-row gap-4 sm:gap-8  rounded-3xl justify-center md:justify-start items-center md:items-start">
-          <div className="w-full  sm:space-y-6 ">
-            <h1 className="font-[unbounded] text-[20px] sm:text-[30px] lg:text-[40px] font-medium leading-tight text-[#0f1724] text-center md:text-left ">
-              Transforming Properties & <br /> Designs Into Visuals
-            </h1>
+        <div className="relative flex flex-col" >
+          {/* Content */}
+          <div className="relative z-20 px-[20px] md:px-[50px] lg:px-[100px] md:py-12 order-2 md:order-1">
+            <div className="flex flex-col md:flex-row gap-4 sm:gap-8  rounded-3xl justify-center md:justify-start items-center md:items-start">
+              <div className="w-full  sm:space-y-6 ">
+                <h1 className="font-[unbounded] text-[20px] sm:text-[30px] lg:text-[40px] font-medium leading-tight text-[#0f1724] text-center md:text-left ">
+                  Transforming Properties & <br /> Designs Into Visuals
+                </h1>
 
-            <button className="hidden md:block bg-orange-400 w-[200px] text-white sm:px-6 sm:py-2 lg:px-8 lg:py-3 rounded-full text-[8px] sm:text-[12px] lg:text-[16px] shadow-md hover:bg-orange-500 transition">
-              Contact Us
-            </button>
-          </div>
+                <button
+                onClick={() => router.push("/contact")}
+                 className="hidden md:block bg-orange-400 w-[200px] text-white sm:px-6 sm:py-2 lg:px-8 lg:py-3 rounded-full text-[8px] sm:text-[12px] lg:text-[18px] shadow-md hover:bg-orange-500 transition font-semibold">
+                  Contact Us
+                </button>
+              </div>
 
-          <div className="w-full lg:w-1/2 text-[#B3B3B3] max-w-lg text-center md:text-left">
-            <p className="font-[poppins] text-[14px] sm:text-[16px] lg:text-[18px] font-regular leading-relaxed">
-              At MarketMyKeys, we reveal the true essence of every property. From cozy homes
-              to luxury villas and modern apartments, we create impactful real estate visuals
-              that turn interest into inquiries and views into offers, driving serious buyers
-              to take action.
-            </p>
+              <div className="w-full lg:w-1/2 text-[#B3B3B3] max-w-lg text-center md:text-left">
+                <p className="font-[poppins] text-[14px] sm:text-[16px] lg:text-[18px] font-regular leading-relaxed">
+                  At MarketMyKeys, we reveal the true essence of every property. From cozy homes
+                  to luxury villas and modern apartments, we create impactful real estate visuals
+                  that turn interest into inquiries and views into offers, driving serious buyers
+                  to take action.
+                </p>
+              </div>
+                <button
+                onClick={() => router.push("/contact")}
+                 className="md:hidden bg-orange-400 w-[150px] text-white px-6 py-2 rounded-full text-[12px] shadow-md hover:bg-orange-500 transition font-medium hover:bg-orange-500">
+                  Contact Us
+                </button>
+            </div>
           </div>
-            <button className="md:hidden bg-orange-400 w-[150px] text-white px-6 py-2 rounded-full text-[12px] shadow-md hover:bg-orange-500 transition">
-              Contact Us
-            </button>
-        </div>
-      </div>
 
       {/* House Image */}
       <div className="relative z-10 md:mt-[-100px] mx-auto pb-12 order-1 md:order-2">

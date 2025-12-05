@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 export default function ContactCTA() {
+  const router = useRouter();
   return (
     <section className="items-center justify-between gap-2 md:gap-10 px-[16px] md:px-[50px] lg:px-[100px] py-20 ">
     <div className="flex flex-row justify-between gap-2 md:gap-10 h-full">
@@ -20,7 +23,9 @@ export default function ContactCTA() {
 
         <div className="flex justify-center mt-2 md:mt-8">
           <button
-            className="px-2 py-2 md:py-3 w-[150px] md:w-[200px] rounded-full text-white font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-medium"
+            type="button"
+            onClick={() => router.push("/contact")}
+            className="px-2 py-2 md:py-3 w-[150px] md:w-[200px] rounded-full text-white font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-semibold"
             style={{
               background: "linear-gradient(90deg, #FF8A3D, #FFA45B)",
             }}
