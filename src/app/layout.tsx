@@ -35,10 +35,9 @@ export default function RootLayout({
       <head>
       {/* Load Termly client-side only */}
       <Script
-        id="termly-banner"
-        src="https://app.termly.io/embed.min.js"
         strategy="afterInteractive"
-        data-auto-block="on"
+        src="https://app.termly.io/embed.min.js"
+        data-auto-block="off"
         data-website-uuid="7ab46f4c-621c-4de7-b860-bc69e2a9d53b"
       />
       </head>
@@ -49,6 +48,10 @@ export default function RootLayout({
       </body>
       <Footer />
       <CookieButton />
+      {/* ✅ Hidden trigger Termly needs */}
+        <a href="#" className="termly-display-preferences hidden">
+          Consent Preferences
+        </a>
     </html>
   );
 }

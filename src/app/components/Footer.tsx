@@ -60,14 +60,17 @@ export default function Footer() {
         <hr className="w-full border-white/50" />
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-center md:justify-between w-full text-sm text-white/90 gap-4 text-[12px] md:text-[16px] lg:text-[18px]">
+        <div className="flex flex-col md:flex-row justify-center md:justify-center w-full text-sm text-white/90 gap-1 text-[10px] md:text-[14px] lg:text-[14px] md:gap-12">
           <p>© 2025 MMK. All rights reserved.</p>
 
-          <div className="flex flex-wrap justify-center gap-6">
-            <a href="#" className="hover:opacity-80">Privacy policy</a>
-            <a href="#" className="hover:opacity-80">Terms of service</a>
-            <a href="#" className="hover:opacity-80">Cookie settings</a>
-          </div>
+          <a>
+            Cookie settings
+          </a>
+
+        <p className="text-center md:text-right">
+          Developed By{" "}
+          <span className="text-white"><a href="https://www.novrithtechnology.com">Novrith Technologies</a></span>
+        </p>
         </div>
       </div>
     </footer>
