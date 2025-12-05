@@ -33,18 +33,26 @@ export default function Footer() {
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-6 md:mt-0 w-full justify-center md:justify-end">
-            <div className="bg-white text-[#FF9652] p-3 rounded-full hover:scale-110 transition">
+            <a 
+             href="https://www.facebook.com/profile.php?id=61577989525831&_rdc=1&_rdr#"
+             className="bg-white text-[#FF9652] p-3 rounded-full hover:scale-110 transition">
               <FaFacebookF size={16} />
-            </div>
-            <div className="bg-white text-[#FF9652] p-3 rounded-full hover:scale-110 transition">
+            </a>
+            <a
+            href="https://www.instagram.com/market.my.keys/" 
+            className="bg-white text-[#FF9652] p-3 rounded-full hover:scale-110 transition">
               <FaInstagram size={16} />
-            </div>
-            <div className="bg-white text-[#FF9652] p-3 rounded-full hover:scale-110 transition">
+            </a>
+            <a
+             href="https://www.linkedin.com/"
+             className="bg-white text-[#FF9652] p-3 rounded-full hover:scale-110 transition">
               <FaLinkedinIn size={16} />
-            </div>
-            <div className="bg-white text-[#FF9652] p-3 rounded-full hover:scale-110 transition">
+            </a>
+            {/* <a
+             href="https://twitter.com/"
+             className="bg-white text-[#FF9652] p-3 rounded-full hover:scale-110 transition">
               <FaTwitter size={16} />
-            </div>
+            </a> */}
           </div>
         </div>
 
