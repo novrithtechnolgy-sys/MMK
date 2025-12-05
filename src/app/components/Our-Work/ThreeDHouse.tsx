@@ -30,7 +30,7 @@ export default function ThreeDHouse() {
   }, []);
 
   return (
-    <div className="flex justify-center w-full h-[500px] items-center rounded-2xl bg-transparent border border-1 md:border-2 border-orange-400">
+    <div className="flex justify-center w-full h-[460px] md:h-[580px] items-center rounded-2xl bg-transparent border border-1 md:border-2 border-orange-400">
       <Canvas camera={{ position: [0, 0, 5] }}>
         <ambientLight intensity={0.2} />
         <directionalLight position={[5, 5, 5]} intensity={2} />
