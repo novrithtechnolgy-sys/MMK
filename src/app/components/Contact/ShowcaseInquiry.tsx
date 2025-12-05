@@ -107,7 +107,7 @@ export default function ShowcaseInquiry() {
 
 
       {/* LEFT AUTO-SCROLL COLUMNS */}
-        <div className="flex gap-1 md:gap-4 w-full h-[500px] md:h-[850px] overflow-hidden rounded-3xl order-2 lg:order-1">
+        <div className="flex gap-1 md:gap-4 w-full h-[500px] md:h-[850px] overflow-hidden rounded-3xl order-2 md:order-1">
           {COLUMNS.map((images, colIndex) => (
             <div
               key={colIndex}
@@ -152,7 +152,7 @@ export default function ShowcaseInquiry() {
 
         {/* RIGHT FORM */}
            {/* RIGHT FORM CARD */}
-        <div className="bg-white p-6 md:p-10 rounded-3xl  border border-gray-200 w-full lg:w-6/8 order-1 lg:order-2">
+        <div className="bg-white p-6 md:p-10 rounded-3xl  border border-gray-200 w-full lg:w-6/8 order-1 md:order-2">
           <h2 className="font-[poppins] text-[16px] sm:text-[20px] lg:text-[32px] font-semibold">Send Us an Inquiry</h2>
 
           <p className="font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3] mt-4">

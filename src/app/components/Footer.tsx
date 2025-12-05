@@ -11,7 +11,9 @@ export default function Footer() {
         {/* Top Section */}
         <div className="flex flex-col md:flex-row md:justify-between items-center w-full">
           
-          <div className="flex justify-center md:justify-start w-full">
+          <a
+           href="/"
+           className="flex justify-center md:justify-start w-full">
           {/* Logo */}
             <Image src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764655875/pcseadvjnildtv2g9nlo.png" 
             alt="Logo" 
@@ -19,14 +21,14 @@ export default function Footer() {
             height={100} 
             className="w- h-8 md:h-10 object-contain"/>
           
-          </div>
+          </a>
 
           {/* Menu */}
           <nav className="flex flex-wrap justify-center gap-4 md:gap-8 text-[14px] md:text-[16px] lg:text-[18px] mt-6 md:mt-0 font-medium w-full">
-            <a href="#" className="hover:opacity-80">Home</a>
-            <a href="#" className="hover:opacity-80">About Us</a>
-            <a href="#" className="hover:opacity-80">Our Works</a>
-            <a href="#" className="hover:opacity-80">Contact</a>
+            <a href="/" className="hover:opacity-80">Home</a>
+            <a href="/about" className="hover:opacity-80">About Us</a>
+            <a href="/our-work" className="hover:opacity-80">Our Works</a>
+            <a href="/contact" className="hover:opacity-80">Contact</a>
           </nav>
 
           {/* Social Icons */}

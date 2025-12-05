@@ -36,6 +36,7 @@ export default function Navbar() {
       <div className="px-[20px] md:px-[50px] lg:px-[100px] mx-auto flex justify-between items-center py-3 md:py-4 bg-transparent">
 
         {/* Logo */}
+        <a href="/">
         <Image
             src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764655637/ygzr438mkjyamx3vmpd9.png"
             alt="Logo"
@@ -43,6 +44,7 @@ export default function Navbar() {
             height={100}
             className="w-auto h-8 md:h-10 "    
           /> 
+        </a>
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-10 text-[18px] font-medium">
           {navItems.map((item) => {
