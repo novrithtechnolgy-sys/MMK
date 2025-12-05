@@ -95,7 +95,7 @@ export default function SocialMediaReel() {
                 snap-center  
                 shrink-0  
                 w-full md:w-[260px] h-[460px]  
-                md:w-full md:h-[300px] xl:h-[480px]  
+                md:w-full md:h-[380px] xl:h-[520px]  
                 rounded-2xl  
                 border border-orange-400  
                 overflow-hidden  
