@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import {Poppins, Unbounded } from "next/font/google";
 import Footer from "./components/Footer";
 import "./globals.css";
+import Script from "next/script";
+import CookieButton from "./components/CookieButton";
 
 
 const poppins = Poppins({
@@ -30,12 +32,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      {/* Load Termly client-side only */}
+      <Script
+        id="termly-banner"
+        src="https://app.termly.io/embed.min.js"
+        strategy="afterInteractive"
+        data-auto-block="on"
+        data-website-uuid="7ab46f4c-621c-4de7-b860-bc69e2a9d53b"
+      />
+      </head>
       <body
         className={`${poppins.variable} ${unbounded.variable} antialiased`}
       >
         {children}
       </body>
       <Footer />
+      <CookieButton />
     </html>
   );
 }
