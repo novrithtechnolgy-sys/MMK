@@ -25,7 +25,7 @@ export const metadata = {
 
   title: {
     default: "MarketMyKeys | Real Estate Photography & Cinematic Tours",
-    template: "%s | MarketMyKeys",
+    template: "%s",
   },
 
   description:

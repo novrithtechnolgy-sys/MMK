@@ -74,7 +74,7 @@ export default function Navbar() {
         <button
         type="button"
         onClick={() => router.push("/contact")}
-        className="hidden font-poppins md:block bg-orange-400 text-white px-6 py-2 rounded-full shadow-md hover:bg-orange-500 transition">
+        className="hidden font-poppins md:block bg-[#FF914D] text-white px-6 py-2 rounded-full shadow-md hover:bg-orange-500 transition">
           Join
         </button>
 

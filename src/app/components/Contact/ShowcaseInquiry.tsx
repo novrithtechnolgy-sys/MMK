@@ -98,7 +98,7 @@ export default function ShowcaseInquiry() {
         <h1 className="font-[unbounded] text-[20px] sm:text-[30px] lg:text-[40px] font-medium leading-tight">Let's Showcase Your Vision</h1>
         <p className="mt-2 md:mt-6 font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3]">
           Whether you're selling a house, launching a new development, 
-          or documenting your latest interior design project—we create visuals that deliver results.
+          or documenting your latest interior design project, we create visuals that deliver results.
         </p>
       </div>
 
@@ -160,7 +160,7 @@ export default function ShowcaseInquiry() {
           </p>
 
           <p className="lg:hidden xl:block font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3]">
-            MarketMyKeys – Turning Properties & Designs Into Experiences That Sell.
+            MarketMyKeys is Turning Properties & Designs Into Experiences That Sell.
           </p>
 
           <form className="mt-8 space-y-6">
@@ -266,7 +266,7 @@ export default function ShowcaseInquiry() {
             <button
               type="submit"
               onClick={handleSubmit}
-              className="px-2 py-2 md:py-3 w-[150px] md:w-[200px] rounded-full text-white font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-semibold bg-orange-400 hover:bg-orange-500 cursor-pointer"
+              className="px-2 py-2 md:py-3 w-[150px] md:w-[200px] rounded-full text-white font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-semibold bg-[#FF914D] hover:bg-orange-500 cursor-pointer"
             >
               Send Message
             </button>

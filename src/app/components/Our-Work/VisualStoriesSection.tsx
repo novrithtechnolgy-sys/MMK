@@ -13,7 +13,7 @@ export default function VisualStoriesSection() {
 
         <p className="font-[poppins] text-[14px] sm:text-[16px] lg:text-[18px] leading-relaxed text-[#B3B3B3] lg:w-5/9">
           Every property has a strength, location, light, layout, or lifestyle.
-          Every design has a story-texture, palette, function, or form. Our job
+          Every design has a story, texture, palette, function, or form. Our job
           is to bring those strengths forward.
         </p>
       </div>

@@ -25,7 +25,7 @@ export default function ContactCTA() {
           <button
             type="button"
             onClick={() => router.push("/contact")}
-            className="px-2 py-2 md:py-3 w-[150px] md:w-[200px] rounded-full text-white font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-semibold hover:bg-orange-500 transition bg-orange-400 hover:bg-orange-500 cursor-pointer"
+            className="px-2 py-2 md:py-3 w-[150px] md:w-[200px] rounded-full text-white font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-semibold hover:bg-orange-500 transition bg-[#FF914D] hover:bg-orange-500 cursor-pointer"
           >
             Send Message
           </button>

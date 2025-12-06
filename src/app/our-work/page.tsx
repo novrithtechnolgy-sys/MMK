@@ -7,6 +7,25 @@ import SocialMeadiaReel from "../components/Our-Work/SocialMeadiaReel";
 import VirtualTourSection from "../components/Our-Work/VirtualTourSection";
 import VisualStoriesSection from "../components/Our-Work/VisualStoriesSection";
 
+export const metadata = {
+  title: "Our Work | MMK Interiors Portfolio",
+  description:
+    "Explore our premium interior photography, real estate imagery, and design-focused visuals created for top-tier brands and developers.",
+  openGraph: {
+    title: "MMK Interiors – Portfolio",
+    description:
+      "See the interior and real estate photography portfolio from MMK Interiors.",
+    url: "https://marketmykeys.com/our-work",
+    images: [{ url: "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734188/b58qghyhca1mbtl2ekka.jpg", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MMK Interiors Portfolio",
+    images: ["https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764734188/b58qghyhca1mbtl2ekka.jpg"],
+  },
+};
+
+
 export default function OurWork() {
     return (
         <>

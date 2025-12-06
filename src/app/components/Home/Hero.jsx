@@ -28,7 +28,7 @@ export default function Hero() {
 
                 <button
                 onClick={() => router.push("/contact")}
-                 className="hidden md:block bg-orange-400 w-[200px] text-white sm:px-6 sm:py-2 lg:px-8 lg:py-3 rounded-full text-[8px] sm:text-[12px] lg:text-[18px] shadow-md hover:bg-orange-500 transition font-semibold cursor-pointer hover:bg-orange-500">
+                 className="hidden md:block bg-[#FF914D] w-[200px] text-white sm:px-6 sm:py-2 lg:px-8 lg:py-3 rounded-full text-[8px] sm:text-[12px] lg:text-[18px] shadow-md hover:bg-orange-500 transition font-semibold cursor-pointer hover:bg-orange-500">
                   Contact Us
                 </button>
               </div>
@@ -43,7 +43,7 @@ export default function Hero() {
               </div>
                 <button
                 onClick={() => router.push("/contact")}
-                 className="md:hidden bg-orange-400 w-[150px] text-white px-6 py-2 rounded-full text-[12px] shadow-md hover:bg-orange-500 transition font-medium hover:bg-orange-500">
+                 className="md:hidden bg-[#FF914D] w-[150px] text-white px-6 py-2 rounded-full text-[12px] shadow-md hover:bg-orange-500 transition font-medium hover:bg-orange-500">
                   Contact Us
                 </button>
             </div>

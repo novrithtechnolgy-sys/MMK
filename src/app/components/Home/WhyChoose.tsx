@@ -43,7 +43,7 @@ export default function WhyChoose() {
         <div className="2xl:w-[600px] flex  flex-col  items-end ">
             <div className="hidden md:block flex bg-white/20 backdrop-blur-xl text-white p-[20px] rounded-2xl md:w-[300px] lg:w-[450px] xl:w-[400px] 2xl:w-[500px] leading-[1.2]">
                 <p className="font-[poppins] text-[10px] sm:text-[14px] lg:text-[18px] font-medium">
-                    High-quality visuals aren't a luxury—they're a necessity.  
+                    High-quality visuals aren't a luxury, they're a necessity.  
                     <br />
                     We understand the psychology of your audience:
                 </p>
