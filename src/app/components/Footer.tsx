@@ -4,6 +4,16 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/f
 import Image from "next/image";
 
 export default function Footer() {
+
+    const handleClick = () => {
+    const preferences = document.querySelector(".termly-display-preferences") as HTMLElement;
+    if (preferences) {
+      preferences.click(); // Open Termly consent preferences
+    } else {
+      alert("Cookie preferences are not available yet. Please try again in a few seconds.");
+    }
+  };
+
   return (
     <footer className="bg-[#FF9652] text-white px-[20px] md:px-[50px] lg:px-[100px] py-10">
       <div className=" mx-auto flex flex-col items-center text-center gap-8">
@@ -63,7 +73,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-center md:justify-center w-full text-sm text-white/90 gap-1 text-[10px] md:text-[14px] lg:text-[14px] md:gap-12">
           <p>© 2025 MMK. All rights reserved.</p>
 
-          <a>
+          <a
+            href="#"
+            onClick={handleClick}>
             Cookie settings
           </a>
 
