@@ -48,7 +48,7 @@ export const metadata = {
       "High-end real estate visuals including photos, drone shots, 360 tours, and cinematic walkthroughs.",
     images: [
       {
-        url: "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764655637/ygzr438mkjyamx3vmpd9.png",
+        url: "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765015733/zobsdm9fl4lia5svioqy.png",
         width: 1200,
         height: 630,
         alt: "MarketMyKeys Real Estate Photography",
@@ -61,7 +61,7 @@ export const metadata = {
     title: "MarketMyKeys | Real Estate Photography",
     description:
       "Capture your property with premium real estate photography & video tours.",
-    images: ["https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764655637/ygzr438mkjyamx3vmpd9.png"],
+    images: ["https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765015733/zobsdm9fl4lia5svioqy.png"],
   },
 
   icons: {
