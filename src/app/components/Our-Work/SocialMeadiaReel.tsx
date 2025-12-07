@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 export default function SocialMediaReel() {
-  const videos = ["0fGgzxc7Qxo", "3TCDy1L6dT8", "KPsNDC1BGOc", "0fGgzxc7Qxo"];
+  const videos = ["KZlD-xKWF9c", "uzGUI7WuFt0", "-eOXHNA97eg", "SAsakLDVnmg"];
 
   const players = useRef<any[]>([]);
   const [apiReady, setApiReady] = useState(false);

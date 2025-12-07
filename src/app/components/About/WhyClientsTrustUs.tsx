@@ -16,7 +16,7 @@ export default function WhyClientsTrustUs() {
         {/* LEFT IMAGE */}
         <div className="relative overflow-hidden bg-gray-100 md:w-1/2">
           <Image
-            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764666431/h2ufoklfrhu71ya7k1rf.jpg"
+            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765104006/rexfs2mua2xl4ixowi0r.jpg"
             alt="Interior Modern"
             width={900}
             height={700}

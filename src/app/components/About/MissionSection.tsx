@@ -20,7 +20,7 @@ export default function MissionSection() {
           {/* Wide Rounded Image */}
           <div className="hidden md:block w-full h-full rounded-[30px] overflow-hidden">
           <Image
-            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764663056/o82nlop0rxohari1s4lx.jpg"
+            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765097962/k3bcud5fnvuqmrutvm3a.jpg"
             alt="Interior Example"
             width={600}
             height={600}
@@ -32,7 +32,7 @@ export default function MissionSection() {
         {/* RIGHT SIDE IMAGE */}
         <div className="hidden md:block w-full h-full rounded-[30px] overflow-hidden">
           <Image
-            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764663035/xaqtoeya2mzas4grhlfo.jpg"
+            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765103814/zfkbr52hpcg4nlsrzprc.jpg"
             alt="Modern House"
             width={600}
             height={600}

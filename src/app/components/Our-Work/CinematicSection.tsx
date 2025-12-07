@@ -12,8 +12,8 @@ export default function CinematicSection() {
 
   // Images
   const images = [
-    "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764761962/lgpehaodjn3xvvrpzoaj.jpg",
-    "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764761952/chmlsx4d7fppnqjct9tk.jpg",
+    "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765097962/k3bcud5fnvuqmrutvm3a.jpg",
+    "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765097979/yexpgiroz13cnunbnxyu.jpg",
   ];
 
   // Touch logic

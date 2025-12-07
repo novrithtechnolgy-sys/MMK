@@ -47,7 +47,7 @@ export default function PerfectForSection() {
           {/* RIGHT IMAGE */}
           <div className="relative w-full md:w-2/3 h-[220px] sm:h-[260px] md:h-[380px] rounded-2xl overflow-hidden">
             <Image
-              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764752477/nrsey8kpid6vwlg7hxtq.jpg"
+              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765097769/v8jrqfnzkvfqxycxm5ql.jpg"
               alt="Architecture"
               fill
               className="object-cover"

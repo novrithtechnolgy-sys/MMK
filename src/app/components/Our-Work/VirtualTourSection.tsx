@@ -1,6 +1,10 @@
 "use client";
 
-import ThreeDHouse from "./ThreeDHouse";
+import MapEmbed from "./ThreeDHouse";
+
+
+
+
 
 
 export default function VirtualTourSection() {
@@ -31,7 +35,7 @@ export default function VirtualTourSection() {
       </div>
 
       {/* Main White Card */}
-      <ThreeDHouse/>
+      <MapEmbed/>
       
     </section>
   );

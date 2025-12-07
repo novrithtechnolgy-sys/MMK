@@ -27,7 +27,7 @@ export default function AboutUs() {
         {/* Image 1 */}
         <div className="flex-[2] rounded-xl md:rounded-3xl overflow-hidden">
           <Image
-            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764658979/cwfjk90rak9q6brbyg0u.jpg"
+            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765103276/vfu6bt4uaqfrpzbflqkw.jpg"
             alt="Modern House"
             width={600}
             height={450}
@@ -38,7 +38,7 @@ export default function AboutUs() {
         {/* Image 2 */}
         <div className="flex-[1.2] rounded-xl md:rounded-3xl overflow-hidden">
           <Image
-            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764658978/mayjsa7o812imvnmlwn8.jpg"
+            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765103118/revyr72jxq6brk8lv6ej.jpg"
             alt="Interior Room"
             width={600}
             height={450}
@@ -49,7 +49,7 @@ export default function AboutUs() {
         {/* Image 3 */}
         <div className="flex-[1] rounded-xl md:rounded-3xl overflow-hidden">
           <Image
-            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764658978/hwuc9r36oxpgi0qmfy7h.jpg"
+            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765103621/r5lj1v27mscvbsaogffb.jpg"
             alt="Modern Kitchen"
             width={600}
             height={450}
