@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 
 export default function CinematicVideoSection() {
   const iframeRef = useRef<HTMLIFrameElement | null>(null);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const togglePlay = () => {
     if (!iframeRef.current) return;
@@ -59,6 +59,7 @@ export default function CinematicVideoSection() {
           <iframe
             ref={iframeRef}
             src={embedURL}
+            title="YouTube video player"
             className="w-full h-[250px] md:h-[450px] lg:h-[520px] object-cover"
             allow="autoplay; encrypted-media"
           ></iframe>
