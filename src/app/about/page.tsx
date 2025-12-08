@@ -13,12 +13,12 @@ export const metadata = {
     description:
       "The story and people behind MMK Interiors — where creativity meets precision.",
     url: "https://marketmykeys.com/about",
-    images: [{ url: "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764658979/cwfjk90rak9q6brbyg0u.jpg", width: 1200, height: 630 }],
+    images: [{ url: "https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765015733/zobsdm9fl4lia5svioqy.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "About MMK Interiors",
-    images: ["https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764658979/cwfjk90rak9q6brbyg0u.jpg"],
+    images: ["https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765015733/zobsdm9fl4lia5svioqy.png"],
   },
 };
 
