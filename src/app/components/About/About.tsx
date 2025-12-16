@@ -27,7 +27,7 @@ export default function AboutUs() {
         {/* Image 1 */}
         <div className="flex-[2] rounded-xl md:rounded-3xl overflow-hidden">
           <Image
-            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765103276/vfu6bt4uaqfrpzbflqkw.jpg"
+            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765824761/nvl7jgwce09gql8iqc2f.jpg"
             alt="Modern House"
             width={600}
             height={450}

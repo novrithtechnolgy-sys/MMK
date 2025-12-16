@@ -27,7 +27,7 @@ export default function VisualStoriesSection() {
             
           >
             <Image
-              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765174114/qkfrykqmj96pos6y6xmk.jpg" // replace path
+              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765822923/f0xoklugmy5fnok0csoy.jpg" // replace path
               alt="Work Image 1"
               fill
               className="object-cover absolute "
@@ -40,7 +40,7 @@ export default function VisualStoriesSection() {
     
           >
             <Image
-              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765175690/lyihfjysjxewwafej2y0.jpg"
+              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765823959/kvtjipjgldh5ebhnc35g.jpg"
               alt="Work Image 2"
               fill
               className="object-cover"
@@ -52,7 +52,7 @@ export default function VisualStoriesSection() {
        
           >
             <Image
-              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765174113/ulq9zgxonn9ccthf4u1p.jpg"
+              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765803099/upftzhasthk4h7vhswa9.jpg"
               alt="Work Image 3"
               fill
               className="object-cover"
@@ -65,7 +65,7 @@ export default function VisualStoriesSection() {
   
           >
             <Image
-              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765174114/tzvoskifcohp7w7oplgt.jpg"
+              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765803119/cin8ejuw3tt4gdgrjk48.jpg"
               alt="Work Image 4"
               fill
               className="object-cover"
@@ -88,7 +88,7 @@ export default function VisualStoriesSection() {
             
           >
             <Image
-              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765174114/qkfrykqmj96pos6y6xmk.jpg" // replace path
+              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765822923/f0xoklugmy5fnok0csoy.jpg" // replace path
               alt="Work Image 1"
               fill
               className="object-cover absolute "
@@ -101,7 +101,7 @@ export default function VisualStoriesSection() {
     
           >
             <Image
-              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765175690/lyihfjysjxewwafej2y0.jpg"
+              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765823959/kvtjipjgldh5ebhnc35g.jpg"
               alt="Work Image 2"
               fill
               className="object-cover"
@@ -116,7 +116,7 @@ export default function VisualStoriesSection() {
        
           >
             <Image
-              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765174113/ulq9zgxonn9ccthf4u1p.jpg"
+              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765803099/upftzhasthk4h7vhswa9.jpg"
               alt="Work Image 3"
               fill
               className="object-cover"
@@ -129,7 +129,7 @@ export default function VisualStoriesSection() {
   
           >
             <Image
-              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765174114/tzvoskifcohp7w7oplgt.jpg"
+              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765803119/cin8ejuw3tt4gdgrjk48.jpg"
               alt="Work Image 4"
               fill
               className="object-cover"

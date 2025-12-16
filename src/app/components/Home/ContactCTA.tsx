@@ -36,7 +36,7 @@ export default function ContactCTA() {
         <div className="w-1/2 rounded-xl md:rounded-3xl overflow-hidden shadow-md">
           <div className=" bg-black w-full h-full">
             <Image
-              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765113870/kuwisubwh3azmfnalgo0.jpg"
+              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765850931/adaxiurzgtjsbwcimbls.jpg"
               alt="Contact CTA Image"
               width={1000}
               height={1000}

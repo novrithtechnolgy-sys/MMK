@@ -37,7 +37,7 @@ export default function PerfectForSection() {
           {/* LEFT IMAGE */}
           <div className="relative w-full md:w-1/3 h-[120px] sm:h-[260px] md:h-[380px] rounded-2xl overflow-hidden">
             <Image
-              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764752507/meryhqyirlk6abfmhhuw.jpg"
+              src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1765821978/ww0xfnhecl2ixntvf4pj.jpg"
               alt="Drone"
               fill
               className="object-cover"
