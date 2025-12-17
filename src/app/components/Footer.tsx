@@ -81,7 +81,7 @@ export default function Footer() {
 
         <p className="text-center md:text-right">
           Developed By{" "}
-          <span className="text-white"><a href="https://www.novrithtechnology.com">Novrith Technologies</a></span>
+          <span className="text-white"><a href="https://www.novrithtechnology.com" className="font-bold">Novrith Technologies</a></span>
         </p>
         </div>
       </div>
