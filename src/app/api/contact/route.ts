@@ -30,47 +30,123 @@ export async function POST(req: Request) {
       to: process.env.EMAIL_TO || "sumalnadera81@gmail.com",
       subject: `📨 New Form Submission – ${firstName} ${lastName} via Website Contact Form`,
       html: `
-      <div style="font-family: Arial; background:#f7f7f7; padding:25px;">
-        <div style="max-width:700px; margin:auto; background:white; padding:25px; border-radius:10px;">
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+          /* Mobile responsiveness */
+          @media only screen and (max-width: 600px) {
+            .container {
+              width: 100% !important;
+              padding: 2px !important;
+            }
+            .content {
+              padding: 2px !important;
+            }
+            .header h1 {
+              font-size: 18px !important;
+            }
+            table td {
+              display: block !important;
+              width: 100% !important;
+            }
+            table td:first-child {
+              font-weight: bold;
+              margin-top: 10px;
+            }
+          }
+        </style>
+      </head>
 
-        <!-- Header -->
-        <div style="background-color: #fa7a12ff; padding: 25px; text-align: center; color: white; rounded-top: 10px; rounded-bottom: 10px;">
-          <img src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764655875/pcseadvjnildtv2g9nlo.png" alt="Company Logo" style="width: 120px; margin-bottom: 10px;" />
-          <h1 style="margin: 0; font-size: 20px; letter-spacing: 1px;">New Contact Form Submission</h1>
-        </div>
+      <body style="margin:0; padding:0; font-family: Arial, sans-serif; background:#f7f7f7;">
 
-        <!-- Body -->
-        <div style="padding: 30px;">
-          <h2 style="margin-top:0;">New Inquiry Details</h2>
-          <table cellpadding="6" cellspacing="0" style="width:100%; border-collapse:collapse;">
-            <tr><td style="font-weight:bold;">Name:</td><td>${firstName} ${lastName}</td></tr>
-            <tr><td style="font-weight:bold;">Email:</td><td>${email}</td></tr>
-            <tr><td style="font-weight:bold;">Phone:</td><td>${phone}</td></tr>
-            <tr><td style="font-weight:bold;">Location:</td><td>${location}</td></tr>
-            <tr><td style="font-weight:bold;">Client Type:</td><td>${clientType}</td></tr>
-            <tr><td style="font-weight:bold;">Services:</td><td>${services}</td></tr>
-            <tr><td style="font-weight:bold;">Required Services:</td><td>${requiredServices}</td></tr>
-          </table>
+        <div style="padding:25px;">
+          <div class="container" style="max-width:700px; margin:auto; background:#ffffff; border-radius:10px; overflow:hidden;">
 
-          <h3 style="margin-top:30px;">Message</h3>
-          <div style="padding:15px; background:#fafafa; border-left:4px solid #000;">
-            ${message?.replace(/\n/g, "<br>") || "No message provided"}
+            <!-- Header -->
+            <div class="header" style="background-color:#fa7a12ff; padding:25px; text-align:center; color:#ffffff;">
+              <img src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1764655875/pcseadvjnildtv2g9nlo.png"
+                  alt="Company Logo"
+                  style="width:120px; max-width:100%; margin-bottom:10px;" />
+              <h1 style="margin:0; font-size:20px; letter-spacing:1px;">
+                New Contact Form Submission
+              </h1>
+            </div>
+
+            <!-- Body -->
+            <div class="content" style="padding:30px;">
+              <h2 style="margin-top:0;">Contact Details</h2>
+
+              <table cellpadding="6" cellspacing="0" width="100%" style="border-collapse:collapse;">
+                <tr>
+                  <td style="font-weight:bold;">Name:</td>
+                  <td>${firstName} ${lastName}</td>
+                </tr>
+                <tr>
+                  <td style="font-weight:bold;">Email:</td>
+                  <td>${email}</td>
+                </tr>
+                <tr>
+                  <td style="font-weight:bold;">Phone:</td>
+                  <td>${phone}</td>
+                </tr>
+                <tr>
+                  <td style="font-weight:bold;">Location:</td>
+                  <td>${location}</td>
+                </tr>
+                <tr>
+                  <td style="font-weight:bold;">Client Type:</td>
+                  <td>${clientType}</td>
+                </tr>
+                <tr>
+                  <td style="font-weight:bold;">Services:</td>
+                  <td>${services}</td>
+                </tr>
+                <tr>
+                  <td style="font-weight:bold;">Required Services:</td>
+                  <td>${requiredServices}</td>
+                </tr>
+              </table>
+
+              <h3 style="margin-top:30px;">Message</h3>
+              <div style="padding:15px; background:#fafafa; border-left:4px solid #000;">
+                ${message?.replace(/\n/g, "<br>") || "No message provided"}
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div style="background-color:#fa7a12ff; padding:20px; text-align:center; font-size:12px; color:#ffffff;">
+              <p style="margin:0;">
+                This message was sent from your website contact form.
+              </p>
+              <p style="margin:5px 0;">
+                © ${new Date().getFullYear()} Digital Escapes. All rights reserved.
+              </p>
+
+              <div style="margin-top:10px;">
+                <a href="https://www.marketmykey.com"
+                  style="color:#ffffff; text-decoration:underline; margin:0 6px;">
+                  Website
+                </a> |
+                <a href="mailto:marketmykeys@gmail.com"
+                  style="color:#ffffff; text-decoration:underline; margin:0 6px;">
+                  Email
+                </a> |
+                <a href="https://linkedin.com/company/marketmykeys"
+                  style="color:#ffffff; text-decoration:underline; margin:0 6px;">
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
           </div>
-         </div>
-
-        <!-- Footer -->
-        <div style="background-color: #fa7a12ff; padding: 20px; text-align: center; font-size: 12px; color: #ffffff;">
-          <p style="margin: 0;">This message was sent from your website contact form.</p>
-          <p style="margin: 5px 0;">© ${new Date().getFullYear()} Digital Escapes. All rights reserved.</p>
-          <div style="margin-top: 10px;">
-            <a href="https://www.marketmykey.com" style="color: #ffffff; text-decoration: underline; margin: 0 8px;">Website</a> |
-            <a href="mailto:marketmykeys@gmail.com" style="color: #ffffff; text-decoration: underline; margin: 0 8px;">Email</a> |
-            <a href="https://linkedin.com/company/marketmykeys" style="color: #ffffff; text-decoration: underline; margin: 0 8px;">LinkedIn</a>
-          </div>
         </div>
 
-        </div>
-      </div>
+      </body>
+      </html>
+
     `,
     };
 
