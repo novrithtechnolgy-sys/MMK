@@ -80,8 +80,8 @@ export default function Footer() {
           </a>
 
         <p className="text-center md:text-right">
-          Developed By{" "}
-          <span className="text-white"><a href="https://www.novrithtechnology.com" className="font-bold">Novrith Technologies</a></span>
+          Concept By <a href="https://xtreamdigital.com" className="font-bold text-white hover:underline">XtreamDigital</a> & Developed By{" "}
+          <span className="text-white"><a href="https://www.novrithtechnology.com" className="font-bold hover:underline">Novrith Technologies</a></span>
         </p>
         </div>
       </div>

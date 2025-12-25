@@ -91,6 +91,29 @@ export default function RootLayout({
         data-auto-block="off"
         data-website-uuid="7ab46f4c-621c-4de7-b860-bc69e2a9d53b"
       />
+        {/* Metricool */}
+        <Script
+          id="metricool-tracker"
+          strategy="afterInteractive"
+        >
+          {`
+            function loadScript(a){
+              var b=document.getElementsByTagName("head")[0],
+              c=document.createElement("script");
+              c.type="text/javascript";
+              c.src="https://tracker.metricool.com/resources/be.js";
+              c.onreadystatechange=a;
+              c.onload=a;
+              b.appendChild(c);
+            }
+            loadScript(function(){
+              beTracker.t({hash:"43e1887414d11601cdbb658913ca9f2b"});
+            });
+          `}
+        </Script>
+      <link rel="icon" type="image/png" sizes="37x37" href="/favicon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       </head>
       <body
         className={`${poppins.variable} ${unbounded.variable} antialiased`}
