@@ -106,12 +106,14 @@ export default function ShowcaseInquiry() {
         </p>
       </div>
 
+      
+
       {/* MAIN GRID */}
-      <div className="flex flex-col md:flex-row gap-6 w-full">
+      <div className="flex flex-col md:flex-row gap-6 md:h-[950px]">
 
 
       {/* LEFT AUTO-SCROLL COLUMNS */}
-        <div className="flex gap-1 md:gap-4 w-full h-[500px] md:h-[850px] overflow-hidden rounded-3xl order-2 md:order-1">
+        <div className="flex gap-1 md:gap-4 w-full h-[500px] md:h-full overflow-hidden rounded-3xl order-2 md:order-1">
           {COLUMNS.map((images, colIndex) => (
             <div
               key={colIndex}
@@ -152,11 +154,13 @@ export default function ShowcaseInquiry() {
             </div>
           ))}
         </div>
+        
 
 
         {/* RIGHT FORM */}
            {/* RIGHT FORM CARD */}
         <div className="bg-white p-6 md:p-10 rounded-3xl  border border-gray-200 w-full md:w-6/8 order-1 md:order-2">
+        
           <h2 className="font-[poppins] text-[16px] sm:text-[20px] lg:text-[32px] font-semibold">Send Us an Inquiry</h2>
 
           <p className="font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3] mt-4">
@@ -275,6 +279,16 @@ export default function ShowcaseInquiry() {
               Send Message
             </button>
           </form>
+            <p className="text-end  font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3] mt-8">
+            +94 077 157 9668
+          </p>
+
+          <p className="text-end font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3]">
+            hello@marketmykeys.com
+          </p>
+          <p className="text-end font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3]">
+            No 22 Marikkar St, Dharga Town 12090, Sri Lanka
+          </p>
         </div>
 
       </div>
