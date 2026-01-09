@@ -109,7 +109,7 @@ export default function ShowcaseInquiry() {
       
 
       {/* MAIN GRID */}
-      <div className="flex flex-col md:flex-row gap-6 md:h-[950px]">
+      <div className="flex flex-col md:flex-row gap-6 md:h-[960px]">
 
 
       {/* LEFT AUTO-SCROLL COLUMNS */}
@@ -159,7 +159,7 @@ export default function ShowcaseInquiry() {
 
         {/* RIGHT FORM */}
            {/* RIGHT FORM CARD */}
-        <div className="bg-white p-6 md:p-10 rounded-3xl  border border-gray-200 w-full md:w-6/8 order-1 md:order-2">
+        <div className="bg-white p-6 md:p-10 rounded-3xl  border border-gray-200 w-full md:w-7/8 lg:w-6/8 order-1 md:order-2">
         
           <h2 className="font-[poppins] text-[16px] sm:text-[20px] lg:text-[32px] font-semibold">Send Us an Inquiry</h2>
 
@@ -279,7 +279,7 @@ export default function ShowcaseInquiry() {
               Send Message
             </button>
           </form>
-            <p className="text-end  font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3] mt-4">
+            <p className="text-end  font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3] mt-8">
             +94 077 157 9668
           </p>
 
