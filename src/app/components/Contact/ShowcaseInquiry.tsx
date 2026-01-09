@@ -279,7 +279,7 @@ export default function ShowcaseInquiry() {
               Send Message
             </button>
           </form>
-            <p className="text-end  font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3] mt-8">
+            <p className="text-end  font-[poppins] text-[12px] sm:text-[14px] lg:text-[18px] text-[#B3B3B3] mt-4">
             +94 077 157 9668
           </p>
 
