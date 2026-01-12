@@ -152,8 +152,10 @@ export default function ShowcaseInquiry() {
 
               </div>
             </div>
-          ))}
-        </div>
+          ))}      
+          </div>
+          
+
         
 
 
