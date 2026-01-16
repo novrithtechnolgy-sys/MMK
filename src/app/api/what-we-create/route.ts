@@ -3,10 +3,13 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   const query = `
-    *[_type == "blogType"] | order(order asc, title asc) {
+    *[_type == "whatWeCreate"] | order(number asc){
       _id,
+      number,
       title,
-      "slug": slug.current
+      shortTitle,
+      description,
+      "imageUrl": image.asset->url
     }
   `;
 
