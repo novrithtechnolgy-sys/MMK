@@ -53,7 +53,7 @@ export default function WhyChoose() {
             alt="modern house"
             width={700}
             height={700}
-            className="object-contain w-full h-full xl:h-[550px] lg:mr-[-50px] md:mt-[50px] lg:mt-[-50px] xl:mt-[-50px] items-center"
+            className="object-contain w-full h-full xl:h-[550px] lg:mr-[-50px] md:mt-[50px] lg:mt-[-50px] xl:mt-[-50px] items-center xl:-my-20"
           />
         </div>
         <div className="md:hidden space-y-2 md:space-y-4 text-[14px] md:text-[16px] lg:text-[20px] font-[poppins] md:mb-10">
@@ -72,10 +72,6 @@ export default function WhyChoose() {
             ))}
           </div>
       </div>
-        {/* Bottom text */}
-        <p className="hidden md:block font-[poppins] text-[20px] sm:text-[30px] lg:text-[40px] font-medium md:mt-[20px] lg:mt-[20px] xl:mt-[-120px] 2xl:mt-[-100px] max-w-4xl">
-            Your project only gets one first  impression let’s make it unforgettable.
-        </p>
     </section>
   );
 }
